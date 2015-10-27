@@ -1,0 +1,134 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &182686
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400274}
+  - 114: {fileID: 11413400}
+  m_Layer: 0
+  m_Name: Guard2SpriteCollection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400274
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 182686}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11413400
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 182686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d546f34a90531a14eaba82a43b05b86b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 3
+  materialIdsValid: 1
+  needMaterialInstance: 0
+  spriteDefinitions:
+  - name: x4
+    boundsData:
+    - {x: -.510000229, y: -.210000277, z: 0}
+    - {x: 15.1000004, y: 15.0999985, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: -.00500011444, z: 0}
+    - {x: 17.7600002, y: 16.7299995, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -8.06000042, y: -7.75999975, z: 0}
+    - {x: 7.03999996, y: -7.75999975, z: 0}
+    - {x: -8.06000042, y: 7.3399992, z: 0}
+    - {x: 7.03999996, y: 7.3399992, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .000977050746, y: .000977050746}
+    - {x: .738280773, y: .000977050746}
+    - {x: .000977050746, y: .738280773}
+    - {x: .738280773, y: .738280773}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 642b4a400e461ca4d932754f925037d7, type: 2}
+    materialId: 0
+    sourceTextureGUID: ed16e53191adb95468ed2ef0609b5444
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 3
+    customColliders: []
+    colliderVertices:
+    - {x: -8.01000023, y: 7.31999969, z: -.100000001}
+    - {x: -8.01000023, y: 7.31999969, z: .100000001}
+    - {x: 1.63999939, y: -2.30999994, z: -.100000001}
+    - {x: 1.63999939, y: -2.30999994, z: .100000001}
+    - {x: 7.04999924, y: -7.75999975, z: -.100000001}
+    - {x: 7.04999924, y: -7.75999975, z: .100000001}
+    - {x: 7.05999947, y: 7.34000015, z: -.100000001}
+    - {x: 7.05999947, y: 7.34000015, z: .100000001}
+    colliderIndicesFwd: 020000000100000000000000020000000300000001000000040000000500000002000000020000000500000003000000060000000500000004000000060000000700000005000000000000000100000006000000060000000100000007000000060000000400000002000000020000000000000006000000030000000500000007000000070000000100000003000000
+    colliderIndicesBack: 000000000100000002000000010000000300000002000000020000000500000004000000030000000500000002000000040000000500000006000000050000000700000006000000060000000100000000000000070000000100000006000000020000000400000006000000060000000000000002000000070000000500000003000000030000000100000007000000
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D:
+    - points:
+      - {x: -8.01000023, y: 7.31999969}
+      - {x: 1.63999939, y: -2.30999994}
+      - {x: 7.04999924, y: -7.75999975}
+      - {x: 7.05999947, y: 7.34000015}
+    edgeCollider2D: []
+    attachPoints: []
+  premultipliedAlpha: 0
+  material: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: 642b4a400e461ca4d932754f925037d7, type: 2}
+  textures:
+  - {fileID: 2800000, guid: 4371f3532e94f2c46bd0f762ab5c24e2, type: 3}
+  pngTextures: []
+  materialPngTextureId: 00000000
+  textureFilterMode: 1
+  textureMipMaps: 0
+  allowMultipleAtlases: 0
+  spriteCollectionGUID: deb506c1e27971e449c91d68c6f65198
+  spriteCollectionName: Guard2SpriteCollection
+  assetName: 
+  loadable: 0
+  invOrthoSize: 2
+  halfTargetHeight: 50
+  buildKey: 1360430314
+  dataGuid: 95e18763ed64b1c4e8a7eaed0b92fb97
+  managedSpriteCollection: 0
+  hasPlatformData: 0
+  spriteCollectionPlatforms: []
+  spriteCollectionPlatformGUIDs: []
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 182686}
+  m_IsPrefabParent: 1
