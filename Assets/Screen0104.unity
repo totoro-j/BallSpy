@@ -42614,7 +42614,6 @@ GameObject:
   - 23: {fileID: 1489911197}
   - 33: {fileID: 1489911196}
   - 114: {fileID: 1489911195}
-  - 64: {fileID: 1489911194}
   - 65: {fileID: 1489911198}
   m_Layer: 0
   m_Name: Elevator2-2
@@ -42635,18 +42634,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 628075584}
   m_RootOrder: 5
---- !u!64 &1489911194
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1489911192}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Convex: 1
-  m_Mesh: {fileID: 843980041}
 --- !u!114 &1489911195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42666,7 +42653,7 @@ MonoBehaviour:
   polygonCollider2D: []
   edgeCollider2D: []
   boxCollider: {fileID: 1489911198}
-  meshCollider: {fileID: 1489911194}
+  meshCollider: {fileID: 0}
   meshColliderPositions:
   - {x: -3.82398939, y: 7.10223103, z: -.100000001}
   - {x: -3.82398939, y: 7.10223103, z: .100000001}
@@ -42981,7 +42968,6 @@ GameObject:
   - 23: {fileID: 1525339840}
   - 33: {fileID: 1525339839}
   - 114: {fileID: 1525339838}
-  - 64: {fileID: 1525339837}
   - 65: {fileID: 1525339841}
   m_Layer: 0
   m_Name: Elevator2-1
@@ -43002,18 +42988,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 628075584}
   m_RootOrder: 4
---- !u!64 &1525339837
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1525339835}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Convex: 1
-  m_Mesh: {fileID: 0}
 --- !u!114 &1525339838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43033,7 +43007,7 @@ MonoBehaviour:
   polygonCollider2D: []
   edgeCollider2D: []
   boxCollider: {fileID: 1525339841}
-  meshCollider: {fileID: 1525339837}
+  meshCollider: {fileID: 0}
   meshColliderPositions:
   - {x: -3.82368016, y: 7.14217949, z: -.100000001}
   - {x: -3.82368016, y: 7.14217949, z: .100000001}

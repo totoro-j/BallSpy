@@ -21,7 +21,7 @@ TagManager:
   - Elevator
   - Guard
   - WB_Trigger
-  - WB_TriggerDes
+  - GA_TriggerDes
   - Workspace
   - UI
   - Mist
@@ -31,6 +31,8 @@ TagManager:
   - guard-3
   - Robot_c_Block
   - elevator2
+  - GB_TriggerDes
+  - GC_TriggerDes
   layers:
   - Default
   - TransparentFX
