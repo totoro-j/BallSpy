@@ -1469,6 +1469,9 @@ MonoBehaviour:
     - bottom
     - bottomlight
     - phone
+    - floor0202
+    - 
+    - floor0201
     spriteTextureGUIDs:
     - 17e56e10d147e1348bcc91a4857370ed
     - 852490e103d2d6d4eb7757507880bbdb
@@ -1476,13 +1479,19 @@ MonoBehaviour:
     - 7a3e8b65987497b42a0e6ce5199837e7
     - f6a0c69ec1a87df42a3044ffcd331336
     - 9546da54049675a4287bba9e2f72a27d
+    - cf04bb0017f845246b6b94376b9224d9
+    - 
+    - 47fa73d4ea548564c84b689fa1864de9
     spriteTextureTimeStamps:
-    - 1445902354.2241
-    - 1445902354.23811
-    - 1445902354.25012
-    - 1445902354.06399
-    - 1445902354.077
-    - 1445902354.18007
+    - 1446059653.10243
+    - 1446059653.10243
+    - 1446059653.10243
+    - 1446059653.10243
+    - 1446059653.10243
+    - 1446059653.10243
+    - 1446066749.24879
+    - 0
+    - 1446066719.77855
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
@@ -2397,6 +2406,25 @@ MonoBehaviour:
     - 1445902332.11845
     - 1445902332.19951
     - 1445902332.07992
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3
+  - name: BG_2SpriteCollection
+    spriteCollectionGUID: 8c5c73ad03a17a0469f6fede7b1fde00
+    spriteCollectionDataGUID: d78250fabf1b18e4e9e4ead9450d06a0
+    spriteNames:
+    - BG0201
+    - BG0202
+    - BG0203
+    spriteTextureGUIDs:
+    - 2ec5341ebcf389943adf816cb16d38a9
+    - 808c061eb95f6db438e30848afe88f7c
+    - f5edcedd67b79a94fb94fda109caa3f9
+    spriteTextureTimeStamps:
+    - 1446147197.09146
+    - 1446147309.26067
+    - 1446147400.06236
     managedSpriteCollection: 0
     loadable: 0
     assetName: 

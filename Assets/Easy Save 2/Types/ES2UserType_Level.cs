@@ -29,7 +29,7 @@ public class ES2UserType_Level : ES2Type
 		data.LevelSceneNum = reader.Read<System.Int32>();
 		data.LevelLock = reader.Read<System.Boolean>();
 		data.isCurrent = reader.Read<System.Boolean>();
-		data.LevelTime = reader.Read<System.Int32>();
+		data.LevelTime = reader.Read<System.Single>();
 		data.LevelStars = reader.Read<System.Int32>();
 
 		return data;

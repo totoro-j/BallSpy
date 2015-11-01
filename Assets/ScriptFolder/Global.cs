@@ -7,6 +7,8 @@ public class Global {
 	public bool MusicOff = false;//音乐默认开启
 	//存档读取参数
 	public int SelectedSave = 0;
+	//结算界面时间显示
+	public float CurrentLevelTime;
 
 	public int CurrentStayLevel = 0;
 

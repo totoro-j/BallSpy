@@ -21,7 +21,7 @@ public class SaveCheater : MonoBehaviour {
 				LevelSceneNum = 2,
 				LevelLock = false,
 				isCurrent = false,
-				LevelTime = 0,
+				LevelTime = 999999,
 				LevelStars = 0
 			}
 			);
@@ -36,7 +36,7 @@ public class SaveCheater : MonoBehaviour {
 				LevelSceneNum = 3,
 				LevelLock = false,
 				isCurrent = false,
-				LevelTime = 0,
+				LevelTime = 999999,
 				LevelStars = 0
 			}
 			);
@@ -51,7 +51,7 @@ public class SaveCheater : MonoBehaviour {
 				LevelSceneNum = 4,
 				LevelLock = false,
 				isCurrent = true,
-				LevelTime = 0,
+				LevelTime = 999999,
 				LevelStars = 0
 			}
 			);

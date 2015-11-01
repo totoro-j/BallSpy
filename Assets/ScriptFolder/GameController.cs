@@ -9,32 +9,9 @@ public class Level
 	public int LevelSceneNum{get;set;}
 	public bool LevelLock{get;set;}
 	public bool isCurrent{get;set;}
-	public int LevelTime{get;set;}
+	public float LevelTime{get;set;}
 	public int LevelStars{get;set;}
 }
-
-/*public class Level
-{
-	int LevelNum;
-	int LevelScene;
-	int LevelSceneNum;
-	bool LevelLock;
-	bool isCurrent;
-	int LevelTime;
-	int LevelStars;
-	
-	public static Level Create(int LevelNum, int LevelScene, int LevelSceneNum, bool LevelLock, bool isCurrent, int LevelTime, int LevelStars){
-		Level LevelList = new Level ();
-		LevelList.LevelNum = LevelNum;
-		LevelList.LevelScene = LevelScene;
-		LevelList.LevelSceneNum = LevelSceneNum;
-		LevelList.LevelLock = LevelLock;
-		LevelList.isCurrent = isCurrent;
-		LevelList.LevelTime = LevelTime;
-		LevelList.LevelStars = LevelStars;
-		return LevelList;
-	}
-}*/
 
 public class GameController  : MonoBehaviour{
 	private static GameController instance;  
@@ -120,6 +97,7 @@ public class GameController  : MonoBehaviour{
 	public int CurrentLevelNum;
 	public int CurrentLevelScene;
 	public List<Level> Levels = new List<Level>();
+	public float TimeRecorder = 0;
 	
 	public void Start () {
 		if(Global.GetInstance().SelectedSave == 1 && ES2.Exists ("player01.dat")){

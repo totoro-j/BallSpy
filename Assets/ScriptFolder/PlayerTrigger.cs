@@ -20,6 +20,14 @@ public class PlayerTrigger : MonoBehaviour {
 		//用于触发小球跑到终点时候的场景切换
 		if(other.name == "WinTag"){
 			if(Global.GetInstance ().CurrentStayLevel == GameController.GetInstance ().CurrentLevelNum){
+				for(i=0;i < GameController.GetInstance().Levels.Count; i++){
+					if(GameController.GetInstance().Levels[i].LevelNum == Global.GetInstance ().CurrentStayLevel && (GameController.GetInstance ().TimeRecorder < GameController.GetInstance().Levels[i].LevelTime || GameController.GetInstance().Levels[i].LevelTime == 0)){
+						GameController.GetInstance().Levels[i].LevelTime = GameController.GetInstance ().TimeRecorder;
+						Global.GetInstance().CurrentLevelTime = GameController.GetInstance ().TimeRecorder;
+					}else if(GameController.GetInstance().Levels[i].LevelNum == Global.GetInstance ().CurrentStayLevel && (GameController.GetInstance ().TimeRecorder >= GameController.GetInstance().Levels[i].LevelTime && GameController.GetInstance().Levels[i].LevelTime != 0)){
+						Global.GetInstance().CurrentLevelTime = GameController.GetInstance().Levels[i].LevelTime;
+					}
+				}
 				GameController.GetInstance ().CurrentLevelNum = GameController.GetInstance ().CurrentLevelNum + 1;
 				GameController.GetInstance ().CurrentLevelSceneNum = GameController.GetInstance ().CurrentLevelSceneNum + 1;
 				GameController.GetInstance().Levels.Add(
@@ -46,10 +54,20 @@ public class PlayerTrigger : MonoBehaviour {
 					ES2.Save(1, "player03.dat?tag=CurrentLevelScene");
 					ES2.Save(GameController.GetInstance ().CurrentLevelSceneNum, "player03.dat?tag=CurrentLevelSceneNum");
 				}
-			}
-			for(i=0;i < GameController.GetInstance().Levels.Count; i++){
-				if(GameController.GetInstance().Levels[i].LevelNum == Global.GetInstance ().CurrentStayLevel && GameController.GetInstance().Levels[i].isCurrent == true){
-					GameController.GetInstance().Levels[i].isCurrent = false;
+				for(i=0;i < GameController.GetInstance().Levels.Count; i++){
+					if(GameController.GetInstance().Levels[i].LevelNum == Global.GetInstance ().CurrentStayLevel && GameController.GetInstance().Levels[i].isCurrent == true){
+						GameController.GetInstance().Levels[i].isCurrent = false;
+					}
+				}
+				Global.GetInstance().CurrentLevelTime = GameController.GetInstance ().TimeRecorder;
+			}else{
+				for(i=0;i < GameController.GetInstance().Levels.Count; i++){
+					if(GameController.GetInstance().Levels[i].LevelNum == Global.GetInstance ().CurrentStayLevel && (GameController.GetInstance ().TimeRecorder < GameController.GetInstance().Levels[i].LevelTime || GameController.GetInstance().Levels[i].LevelTime == 0)){
+						GameController.GetInstance().Levels[i].LevelTime = GameController.GetInstance ().TimeRecorder;
+						Global.GetInstance().CurrentLevelTime = GameController.GetInstance ().TimeRecorder;
+					}else if(GameController.GetInstance().Levels[i].LevelNum == Global.GetInstance ().CurrentStayLevel && (GameController.GetInstance ().TimeRecorder >= GameController.GetInstance().Levels[i].LevelTime && GameController.GetInstance().Levels[i].LevelTime != 0)){
+						Global.GetInstance().CurrentLevelTime = GameController.GetInstance().Levels[i].LevelTime;
+					}
 				}
 			}
 			if(Global.GetInstance().SelectedSave == 1 && ES2.Exists ("player01.dat")){

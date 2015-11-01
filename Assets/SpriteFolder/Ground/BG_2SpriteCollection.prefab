@@ -1,39 +1,39 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &113338
+--- !u!1 &143820
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 491082}
-  - 114: {fileID: 11430882}
+  - 4: {fileID: 455420}
+  - 114: {fileID: 11495542}
   m_Layer: 0
-  m_Name: BGSpriteCollection
+  m_Name: BG_2SpriteCollection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!4 &491082
+--- !u!4 &455420
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 113338}
+  m_GameObject: {fileID: 143820}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &11430882
+--- !u!114 &11495542
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 113338}
+  m_GameObject: {fileID: 143820}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 84c7a4b4ee15890498f818262bca0312, type: 3}
@@ -61,18 +61,18 @@ MonoBehaviour:
   forcedTextureWidth: 2048
   forcedTextureHeight: 2048
   textureCompression: 0
-  atlasWidth: 1024
+  atlasWidth: 2048
   atlasHeight: 2048
   forceSquareAtlas: 0
-  atlasWastage: 22.081089
+  atlasWastage: 50.0843048
   allowMultipleAtlases: 0
   removeDuplicates: 1
   textureParams:
-  - name: "\u80CC\u666F1"
+  - name: BG0201
     disableTrimming: 0
     additive: 0
     scale: {x: 1, y: 1, z: 1}
-    texture: {fileID: 2800000, guid: 17e56e10d147e1348bcc91a4857370ed, type: 3}
+    texture: {fileID: 2800000, guid: 2ec5341ebcf389943adf816cb16d38a9, type: 3}
     materialId: 0
     anchor: 4
     anchorX: 0
@@ -109,11 +109,11 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
     colliderColor: 0
     attachPoints: []
-  - name: "\u80CC\u666F2"
+  - name: BG0202
     disableTrimming: 0
     additive: 0
     scale: {x: 1, y: 1, z: 1}
-    texture: {fileID: 2800000, guid: 852490e103d2d6d4eb7757507880bbdb, type: 3}
+    texture: {fileID: 2800000, guid: 808c061eb95f6db438e30848afe88f7c, type: 3}
     materialId: 0
     anchor: 4
     anchorX: 0
@@ -150,11 +150,11 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
     colliderColor: 0
     attachPoints: []
-  - name: "\u80CC\u666F3"
+  - name: BG0203
     disableTrimming: 0
     additive: 0
     scale: {x: 1, y: 1, z: 1}
-    texture: {fileID: 2800000, guid: d44f43c097ca8cc4abd0506dcf2a983d, type: 3}
+    texture: {fileID: 2800000, guid: f5edcedd67b79a94fb94fda109caa3f9, type: 3}
     materialId: 0
     anchor: 4
     anchorX: 0
@@ -191,143 +191,14 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
     colliderColor: 0
     attachPoints: []
-  - name: bottom
-    disableTrimming: 0
-    additive: 0
-    scale: {x: 1, y: 1, z: 1}
-    texture: {fileID: 2800000, guid: 7a3e8b65987497b42a0e6ce5199837e7, type: 3}
-    materialId: 0
-    anchor: 4
-    anchorX: 0
-    anchorY: 0
-    overrideMesh: {fileID: 0}
-    doubleSidedSprite: 0
-    customSpriteGeometry: 0
-    geometryIslands: []
-    dice: 0
-    diceUnitX: 64
-    diceUnitY: 64
-    diceFilter: 0
-    pad: 0
-    extraPadding: 0
-    source: 0
-    fromSpriteSheet: 0
-    hasSpriteSheetId: 0
-    spriteSheetId: 0
-    spriteSheetX: 0
-    spriteSheetY: 0
-    extractRegion: 0
-    regionX: 0
-    regionY: 0
-    regionW: 0
-    regionH: 0
-    regionId: 0
-    colliderType: 4
-    colliderData: []
-    boxColliderMin: {x: 0, y: 0}
-    boxColliderMax: {x: 0, y: 0}
-    polyColliderIslands:
-    - connected: 1
-      points:
-      - {x: 313, y: .5}
-      - {x: 106, y: 0}
-      - {x: 0, y: 107}
-      - {x: 421, y: 107}
-    polyColliderCap: 1
-    colliderConvex: 1
-    colliderSmoothSphereCollisions: 0
-    colliderColor: 0
-    attachPoints: []
-  - name: bottomlight
-    disableTrimming: 0
-    additive: 0
-    scale: {x: 1, y: 1, z: 1}
-    texture: {fileID: 2800000, guid: f6a0c69ec1a87df42a3044ffcd331336, type: 3}
-    materialId: 0
-    anchor: 4
-    anchorX: 0
-    anchorY: 0
-    overrideMesh: {fileID: 0}
-    doubleSidedSprite: 0
-    customSpriteGeometry: 0
-    geometryIslands: []
-    dice: 0
-    diceUnitX: 64
-    diceUnitY: 64
-    diceFilter: 0
-    pad: 0
-    extraPadding: 0
-    source: 0
-    fromSpriteSheet: 0
-    hasSpriteSheetId: 0
-    spriteSheetId: 0
-    spriteSheetX: 0
-    spriteSheetY: 0
-    extractRegion: 0
-    regionX: 0
-    regionY: 0
-    regionW: 0
-    regionH: 0
-    regionId: 0
-    colliderType: 0
-    colliderData: []
-    boxColliderMin: {x: 0, y: 0}
-    boxColliderMax: {x: 0, y: 0}
-    polyColliderIslands: []
-    polyColliderCap: 1
-    colliderConvex: 0
-    colliderSmoothSphereCollisions: 0
-    colliderColor: 0
-    attachPoints: []
-  - name: phone
-    disableTrimming: 0
-    additive: 0
-    scale: {x: 1, y: 1, z: 1}
-    texture: {fileID: 2800000, guid: 9546da54049675a4287bba9e2f72a27d, type: 3}
-    materialId: 0
-    anchor: 4
-    anchorX: 0
-    anchorY: 0
-    overrideMesh: {fileID: 0}
-    doubleSidedSprite: 0
-    customSpriteGeometry: 0
-    geometryIslands: []
-    dice: 0
-    diceUnitX: 64
-    diceUnitY: 64
-    diceFilter: 0
-    pad: 0
-    extraPadding: 0
-    source: 0
-    fromSpriteSheet: 0
-    hasSpriteSheetId: 0
-    spriteSheetId: 0
-    spriteSheetX: 0
-    spriteSheetY: 0
-    extractRegion: 0
-    regionX: 0
-    regionY: 0
-    regionW: 0
-    regionH: 0
-    regionId: 0
-    colliderType: 0
-    colliderData: []
-    boxColliderMin: {x: 0, y: 0}
-    boxColliderMax: {x: 0, y: 0}
-    polyColliderIslands: []
-    polyColliderCap: 1
-    colliderConvex: 0
-    colliderSmoothSphereCollisions: 0
-    colliderColor: 0
-    attachPoints: []
-  spriteCollection: {fileID: 11430192, guid: da6f85dcc11230446a880901691d3fca, type: 2}
+  spriteCollection: {fileID: 11461984, guid: d78250fabf1b18e4e9e4ead9450d06a0, type: 2}
   premultipliedAlpha: 0
   altMaterials:
-  - {fileID: 2100000, guid: c542e572f232c0b4d955e66bc9d2d029, type: 2}
+  - {fileID: 2100000, guid: a231c28fdd0cf2a4094772fbcff7007f, type: 2}
   atlasMaterials:
-  - {fileID: 2100000, guid: c542e572f232c0b4d955e66bc9d2d029, type: 2}
+  - {fileID: 2100000, guid: a231c28fdd0cf2a4094772fbcff7007f, type: 2}
   atlasTextures:
-  - {fileID: 2800000, guid: 2bfddebf16fc4f4489107f12d81f9e64, type: 3}
+  - {fileID: 2800000, guid: b03458af0a22c714a96f6b9bc7646ef9, type: 3}
   atlasTextureFiles: []
   useTk2dCamera: 0
   targetHeight: 640
@@ -354,7 +225,7 @@ MonoBehaviour:
   normalGenerationMode: 0
   padAmount: -1
   autoUpdate: 1
-  editorDisplayScale: 1.72000015
+  editorDisplayScale: 1
   version: 4
   assetName: 
   linkedSpriteCollections: []
@@ -367,5 +238,5 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 113338}
+  m_RootGameObject: {fileID: 143820}
   m_IsPrefabParent: 1
