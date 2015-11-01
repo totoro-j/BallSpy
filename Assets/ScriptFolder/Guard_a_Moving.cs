@@ -22,7 +22,7 @@ public class Guard_a_Moving : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		if (isPrefab == 1) {
             transform.parent.transform.parent.transform.position = new Vector3(transform.parent.transform.parent.transform.position.x - x, transform.parent.transform.parent.transform.position.y, transform.parent.transform.parent.transform.position.z);
 		}

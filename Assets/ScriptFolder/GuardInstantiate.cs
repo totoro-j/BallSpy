@@ -4,6 +4,7 @@ using System.Collections;
 public class GuardInstantiate : MonoBehaviour {
 	public GameObject GuardPrefab;
 	private int CountNum = 2;
+    public int time=600;
 	// Update is called once per frame
 	
 	void FixedUpdate () {
@@ -12,7 +13,7 @@ public class GuardInstantiate : MonoBehaviour {
 			if(CountNum == 1){
 				GameObject NewGuards;
 				NewGuards = Instantiate(GuardPrefab, transform.position, transform.rotation) as GameObject;
-				CountNum = 600;
+				CountNum = time;
 			}
 	}
 }

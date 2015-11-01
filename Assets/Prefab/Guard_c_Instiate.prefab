@@ -296,7 +296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94701d25ae2141048b7608fc8dbf7f95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  x: .0599999987
+  x: .0299999993
   time: 6
   isPrefab: 1
 --- !u!120 &12074218
