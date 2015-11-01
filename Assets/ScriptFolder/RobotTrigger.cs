@@ -19,6 +19,7 @@ public class RobotTrigger : MonoBehaviour {
 	public GameObject WaitCircle;
 	public GameObject Circle;
 	private bool isGravity = false;
+    private bool _Turn = true;//2号机器人转向
 	public bool isBlock_Right = false;//2号机器人工作时被阻挡
 	public bool isBlock_Left = false;//2号机器人工作时被阻挡
 	public int i;
@@ -197,6 +198,17 @@ public class RobotTrigger : MonoBehaviour {
 							GetComponent<WorkSpaceController> ().isWorkSpacePlay = true;
 							GetComponent<WorkSpaceController> ().WorkSpaceControl ();
 						}
+                        //2号机器人工作移动方式
+                        if (RobotsName == "Robot_2-1")
+                        {
+                            if (_Turn)
+                            {
+                                transform.parent.transform.position = new Vector3(transform.parent.transform.position.x + 0.01f, transform.parent.transform.position.y, transform.parent.transform.position.z);
+                            }
+                            else {
+                                transform.parent.transform.position = new Vector3(transform.parent.transform.position.x - 0.01f, transform.parent.transform.position.y, transform.parent.transform.position.z);
+                            }
+                        }
 					} else if (GetComponent<IsWorkSpace> ().isworkspace == false) {
 						//若不在工作台处，工作状态改为false;
 						GetComponent<RobotGameOver> ().isWork = false;
@@ -282,15 +294,34 @@ public class RobotTrigger : MonoBehaviour {
 		} else if(IsWin.tag == "Robot_c_Block_Right") {
 			//c型号被阻隔
 			isBlock_Right = true;
+          
 		} else if(IsWin.tag == "Robot_c_Block_Left") {
 			//c型号被阻隔
 			isBlock_Left = true;
+            
+           
 		}
+        //2号机器人转向
+        if (IsWin.tag == "Robot_c_Block" )
+        {
+            print("0.0");
+             if (_Turn)
+            {
+                //print("0.0");
+                 _Turn = false;
+            }
+            else
+            {
+                //print("0.0");
+                _Turn = true;
+            }
+        }
 	}
 
 	void OnTriggerStay(Collider IsElevator){
 		//如果触发器为电梯
-		if (IsElevator.tag == "elevator") {
+        if (IsElevator.tag == "elevator" || IsElevator.tag == "elevator2")
+        {
 			//触发中，电梯判断为true；
 			IsElevatored = true;
 			isGravity=false;
@@ -301,7 +332,8 @@ public class RobotTrigger : MonoBehaviour {
 	
 	void OnTriggerExit(Collider IsElevator){
 		//如果触发器为电梯
-		if (IsElevator.tag == "elevator") {
+        if (IsElevator.tag == "elevator" || IsElevator.tag == "elevator2")
+        {
 			//离开触发，电梯判断为false；
 			IsElevatored = false;
 		}else if(IsElevator.tag == "Robot_c_Block_Right") {

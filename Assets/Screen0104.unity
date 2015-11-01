@@ -649,7 +649,7 @@ GameObject:
   - 65: {fileID: 46009200}
   m_Layer: 0
   m_Name: BlockRight
-  m_TagString: Robot_c_Block
+  m_TagString: Robot_c_Block_Right
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3771,7 +3771,7 @@ GameObject:
   - 65: {fileID: 138355223}
   m_Layer: 0
   m_Name: BlockRight
-  m_TagString: Robot_c_Block
+  m_TagString: Robot_c_Block_Right
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4350,6 +4350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GuardPrefab: {fileID: 173056, guid: f9d6e91b4e541994c91b4db208364ddf, type: 2}
+  time: 600
 --- !u!1001 &165647505
 Prefab:
   m_ObjectHideFlags: 0
@@ -9858,7 +9859,7 @@ Transform:
   m_LocalScale: {x: 10, y: 25.5375557, z: 1.5}
   m_Children: []
   m_Father: {fileID: 1456202481}
-  m_RootOrder: 10
+  m_RootOrder: 11
 --- !u!65 &366027535
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13721,7 +13722,7 @@ GameObject:
   - 65: {fileID: 596597891}
   m_Layer: 0
   m_Name: BlockRight
-  m_TagString: Robot_c_Block
+  m_TagString: Robot_c_Block_Right
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13737,7 +13738,7 @@ Transform:
   m_LocalScale: {x: 1.42857146, y: 1.42857146, z: 1}
   m_Children: []
   m_Father: {fileID: 1456202481}
-  m_RootOrder: 12
+  m_RootOrder: 13
 --- !u!65 &596597891
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15622,7 +15623,7 @@ GameObject:
   - 65: {fileID: 682278820}
   m_Layer: 0
   m_Name: BlockLeft
-  m_TagString: Robot_c_Block
+  m_TagString: Robot_c_Block_Left
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20113,7 +20114,7 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 2}
   m_Children: []
   m_Father: {fileID: 1456202481}
-  m_RootOrder: 11
+  m_RootOrder: 12
 --- !u!65 &819560231
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34632,7 +34633,7 @@ GameObject:
   - 65: {fileID: 1167178495}
   m_Layer: 0
   m_Name: BlockLeft
-  m_TagString: Robot_c_Block
+  m_TagString: Robot_c_Block_Left
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39345,7 +39346,7 @@ GameObject:
   - 65: {fileID: 1366014123}
   m_Layer: 0
   m_Name: BlockRight
-  m_TagString: Robot_c_Block
+  m_TagString: Robot_c_Block_Right
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41196,7 +41197,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1400302632}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 64.3573532, y: 46.4459953, z: 0}
+  m_LocalPosition: {x: 64.3752823, y: 46.4459953, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1183860420}
@@ -42053,11 +42054,11 @@ Transform:
   - {fileID: 947147307}
   - {fileID: 877938097}
   - {fileID: 1111316022}
+  - {fileID: 1682164531}
   - {fileID: 366027534}
   - {fileID: 819560230}
   - {fileID: 596597890}
   - {fileID: 1895125869}
-  - {fileID: 1682164531}
   m_Father: {fileID: 586018213}
   m_RootOrder: 6
 --- !u!114 &1456202482
@@ -42614,7 +42615,6 @@ GameObject:
   - 23: {fileID: 1489911197}
   - 33: {fileID: 1489911196}
   - 114: {fileID: 1489911195}
-  - 64: {fileID: 1489911194}
   - 65: {fileID: 1489911198}
   m_Layer: 0
   m_Name: Elevator2-2
@@ -42635,18 +42635,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 628075584}
   m_RootOrder: 5
---- !u!64 &1489911194
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1489911192}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Convex: 1
-  m_Mesh: {fileID: 843980041}
 --- !u!114 &1489911195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42666,7 +42654,7 @@ MonoBehaviour:
   polygonCollider2D: []
   edgeCollider2D: []
   boxCollider: {fileID: 1489911198}
-  meshCollider: {fileID: 1489911194}
+  meshCollider: {fileID: 0}
   meshColliderPositions:
   - {x: -3.82398939, y: 7.10223103, z: -.100000001}
   - {x: -3.82398939, y: 7.10223103, z: .100000001}
@@ -42981,7 +42969,6 @@ GameObject:
   - 23: {fileID: 1525339840}
   - 33: {fileID: 1525339839}
   - 114: {fileID: 1525339838}
-  - 64: {fileID: 1525339837}
   - 65: {fileID: 1525339841}
   m_Layer: 0
   m_Name: Elevator2-1
@@ -43002,18 +42989,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 628075584}
   m_RootOrder: 4
---- !u!64 &1525339837
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1525339835}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Convex: 1
-  m_Mesh: {fileID: 0}
 --- !u!114 &1525339838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43033,7 +43008,7 @@ MonoBehaviour:
   polygonCollider2D: []
   edgeCollider2D: []
   boxCollider: {fileID: 1525339841}
-  meshCollider: {fileID: 1525339837}
+  meshCollider: {fileID: 0}
   meshColliderPositions:
   - {x: -3.82368016, y: 7.14217949, z: -.100000001}
   - {x: -3.82368016, y: 7.14217949, z: .100000001}
@@ -47331,7 +47306,7 @@ GameObject:
   - 65: {fileID: 1668844184}
   m_Layer: 0
   m_Name: BlockLeft
-  m_TagString: Robot_c_Block
+  m_TagString: Robot_c_Block_Left
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47847,7 +47822,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 2}
   m_Children: []
   m_Father: {fileID: 1456202481}
-  m_RootOrder: 14
+  m_RootOrder: 10
 --- !u!114 &1682164532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49997,7 +49972,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 79.3572998
+      value: 79.3752441
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: m_LocalPosition.y
@@ -54186,7 +54161,7 @@ GameObject:
   - 65: {fileID: 1895125870}
   m_Layer: 0
   m_Name: BlockLeft
-  m_TagString: Robot_c_Block
+  m_TagString: Robot_c_Block_Left
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54202,7 +54177,7 @@ Transform:
   m_LocalScale: {x: 1.42857146, y: 1.42857146, z: 1}
   m_Children: []
   m_Father: {fileID: 1456202481}
-  m_RootOrder: 13
+  m_RootOrder: 14
 --- !u!65 &1895125870
 BoxCollider:
   m_ObjectHideFlags: 0

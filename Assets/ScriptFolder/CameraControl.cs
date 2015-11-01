@@ -61,6 +61,16 @@ public class CameraControl : MonoBehaviour {
             GameController.GetInstance().FollowedLeftLine = -33.50f;//摄像机跟随时的左极限
             GameController.GetInstance().FollowedRightLine = 60.00f;//摄像机跟随时的右极限
             break;
+        case "Screen0105":
+            GameController.GetInstance().CameraSizeFollowed = 7.1f;//摄像机跟随时的画面深度
+            GameController.GetInstance().CameraSizeAll = 12.95f;//摄像机在观察者模式时的画面深度
+            GameController.GetInstance().ViewerLeftLine = -27.43f;//摄像机在观察者模式时的左极限
+            GameController.GetInstance().ViewerRightLine = 53.80f;//摄像机在观察者模式时的右极限
+            GameController.GetInstance().ViewerUpLine = 14.00f;//摄像机在观察者模式时的上极限
+            GameController.GetInstance().ViewerDownLine = 6.80f;//摄像机在观察者模式时的下极限
+            GameController.GetInstance().FollowedLeftLine = -33.50f;//摄像机跟随时的左极限
+            GameController.GetInstance().FollowedRightLine = 60.00f;//摄像机跟随时的右极限
+            break;
 		}
 		Sequence CameraInitialization = new Sequence ();
 		CameraInitialization.Prepend (HOTween.To (Camera01, 2, new TweenParms ().Prop ("orthographicSize", GameController.GetInstance().CameraSizeFollowed).Ease (EaseType.EaseOutQuart)));

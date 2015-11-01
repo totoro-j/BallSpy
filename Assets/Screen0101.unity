@@ -144,7 +144,7 @@ MonoBehaviour:
   collection: {fileID: 11470854, guid: 4de4245e9b70ee94686d6509ffb15050, type: 2}
   _color: {r: 1, g: 1, b: 1, a: .576470613}
   _scale: {x: 3.23139334, y: 6.7036047, z: 1}
-  _spriteId: 1
+  _spriteId: 11
   boxCollider2D: {fileID: 0}
   polygonCollider2D: []
   edgeCollider2D: []
@@ -5939,7 +5939,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 306800354}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: -40.5900002, y: 5.44000006, z: 0}
+=======
+  m_LocalPosition: {x: -40.6899986, y: 5.51999998, z: 0}
+>>>>>>> c4a571c2670a2869aa72898db72432b3bafe63cf
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -7051,7 +7055,11 @@ MonoBehaviour:
   collection: {fileID: 11470854, guid: 4de4245e9b70ee94686d6509ffb15050, type: 2}
   _color: {r: 1, g: 1, b: 1, a: .576470613}
   _scale: {x: 3.2134366, y: 4.34147501, z: 1}
+<<<<<<< HEAD
   _spriteId: 1
+=======
+  _spriteId: 11
+>>>>>>> c4a571c2670a2869aa72898db72432b3bafe63cf
   boxCollider2D: {fileID: 0}
   polygonCollider2D: []
   edgeCollider2D: []
@@ -8566,7 +8574,11 @@ MonoBehaviour:
   collection: {fileID: 11470854, guid: 4de4245e9b70ee94686d6509ffb15050, type: 2}
   _color: {r: 1, g: 1, b: 1, a: .576470613}
   _scale: {x: 3.22085619, y: 4.32580233, z: 1}
+<<<<<<< HEAD
   _spriteId: 1
+=======
+  _spriteId: 11
+>>>>>>> c4a571c2670a2869aa72898db72432b3bafe63cf
   boxCollider2D: {fileID: 0}
   polygonCollider2D: []
   edgeCollider2D: []
@@ -14429,7 +14441,11 @@ MonoBehaviour:
   collection: {fileID: 11470854, guid: 4de4245e9b70ee94686d6509ffb15050, type: 2}
   _color: {r: 1, g: 1, b: 1, a: .576470613}
   _scale: {x: 3.21317673, y: 6.7030983, z: 1}
+<<<<<<< HEAD
   _spriteId: 1
+=======
+  _spriteId: 11
+>>>>>>> c4a571c2670a2869aa72898db72432b3bafe63cf
   boxCollider2D: {fileID: 0}
   polygonCollider2D: []
   edgeCollider2D: []
@@ -20525,7 +20541,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 962854885}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: 64.3779068, y: 46.4459953, z: 0}
+=======
+  m_LocalPosition: {x: 64.313591, y: 46.4459953, z: 0}
+>>>>>>> c4a571c2670a2869aa72898db72432b3bafe63cf
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1965094725}
@@ -33772,7 +33792,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD
       value: 79.3779297
+=======
+      value: 79.3135986
+>>>>>>> c4a571c2670a2869aa72898db72432b3bafe63cf
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: m_LocalPosition.y
@@ -38919,7 +38943,10 @@ MonoBehaviour:
   CurrentLevelSceneNum: 0
   CurrentLevelNum: 0
   CurrentLevelScene: 0
+<<<<<<< HEAD
   TimeRecorder: 0
+=======
+>>>>>>> c4a571c2670a2869aa72898db72432b3bafe63cf
 --- !u!1 &1786276039
 GameObject:
   m_ObjectHideFlags: 0
@@ -42789,6 +42816,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
+<<<<<<< HEAD
 --- !u!1 &1970161280
 GameObject:
   m_ObjectHideFlags: 0
@@ -42891,6 +42919,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c47ad4e6cbbb834fa3b53aaaa558ed8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+>>>>>>> c4a571c2670a2869aa72898db72432b3bafe63cf
 --- !u!1 &1971969003
 GameObject:
   m_ObjectHideFlags: 0

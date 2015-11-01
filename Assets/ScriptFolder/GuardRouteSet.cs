@@ -32,10 +32,10 @@ public class GuardRouteSet : MonoBehaviour {
 	void Update () {
     }
 private void _GuardTraslation(){
-    while (_childNum == _Children.Count) {
+    while (_childNum >= _Children.Count) {
         _childNum = -1;
     }
-    _childNum++;
+    _childNum=_childNum+1;
     _child=_Children[_childNum];
     HOTween.To(transform.parent.transform.parent.gameObject.transform, time, new TweenParms().Prop("position", _child.transform.position).OnComplete(_GuardRotate));
 }
