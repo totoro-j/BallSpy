@@ -41,7 +41,7 @@ public class RobotTrigger : MonoBehaviour {
 		//print (transform.parent.gameObject.GetComponent<Rigidbody>().velocity);
 		if (GameController.GetInstance().isCameraFollowed == true && GameController.GetInstance().FilmMode == false) {
 			//判断当前机器人是否被警卫击毁
-			if (GetComponent<RobotGameOver> ().isAvail == true) {
+			if (gameObject.GetComponent<RobotGameOver> ().isAvail == true) {
 				//判断当前操作对象是否是机器人且当前机器人是否是玩家机器人
 				if (GameController.GetInstance().IsRobot == true && gameObject == GameController.GetInstance().CurrentPlayerTrigger) {
 					//判断当前机器人是否处在电梯中
@@ -302,17 +302,14 @@ public class RobotTrigger : MonoBehaviour {
            
 		}
         //2号机器人转向
-        if (IsWin.tag == "Robot_c_Block" )
+		if (IsWin.tag == "Robot_c_Block_Left" || IsWin.tag == "Robot_c_Block_Right" )
         {
-            print("0.0");
              if (_Turn)
             {
-                //print("0.0");
                  _Turn = false;
             }
             else
             {
-                //print("0.0");
                 _Turn = true;
             }
         }

@@ -9,12 +9,12 @@ public class RobotAnimLoad : MonoBehaviour {
 	public GameObject Goods01;
 	public GameObject Light01;
 	public GameObject Lamp01;
-	private int WorkNow = 0;//0是行走，1是边走边工作，2是只工作
+	private int WorkNow = 0;//0是行走，1是边走边向右工作，2是只工作，3是边走边向左工作
 
 	//load界面的动画加载
 	// Use this for initialization
 	void Start () {
-		if ((Global.GetInstance ().loadName == "Screen0101" || Global.GetInstance ().loadName == "Screen0102") && Application.loadedLevelName == "DemoLoading") {
+		if (Global.GetInstance ().loadName == "Screen0101" && Application.loadedLevelName == "DemoLoading") {
 			Aim01.SetActive (true);
 			Goods01.GetComponent<GoodsInstantiate>().InstantiateGoods = true;
 			G_01 = new Sequence (new SequenceParms ().Loops (-1, LoopType.Restart));
@@ -27,7 +27,7 @@ public class RobotAnimLoad : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if ((Global.GetInstance ().loadName == "Screen0101" || Global.GetInstance ().loadName == "Screen0102") && Application.loadedLevelName == "DemoLoading") {
+		if (Global.GetInstance ().loadName == "Screen0101" && Application.loadedLevelName == "DemoLoading") {
 			if (WorkNow == 0) {
 				gameObject.transform.parent.gameObject.transform.Translate (1.8f * Time.deltaTime, 0f, 0f);
 				gameObject.transform.parent.gameObject.GetComponent<tk2dSpriteAnimator> ().Play ("Robot_2_walk");
@@ -36,18 +36,23 @@ public class RobotAnimLoad : MonoBehaviour {
 				gameObject.transform.parent.gameObject.GetComponent<tk2dSpriteAnimator> ().Play ("Robot_2_work");
 			} else if (WorkNow == 2) {
 				gameObject.transform.parent.gameObject.GetComponent<tk2dSpriteAnimator> ().Stop ();
+			} else if (WorkNow == 3) {
+				gameObject.transform.parent.gameObject.transform.Translate (-1.8f * Time.deltaTime, 0f, 0f);
+				gameObject.transform.parent.gameObject.GetComponent<tk2dSpriteAnimator> ().Play ("Robot_2_work");
 			}
 		}
 	}
 
 	void OnTriggerEnter(Collider DoWork){
-		if (DoWork.name == "WorkNow") {
+		if (DoWork.name == "WorkLeft") {
 			WorkNow = 1;
 			Aim01.SetActive (false);
 			Light01.GetComponent<tk2dSprite>().SetSprite("绿光");
 			Lamp01.GetComponent<tk2dSprite>().SetSprite("绿灯");
 		} else if(DoWork.name == "Stop") {
 			WorkNow = 2;
+		} else if(DoWork.name == "WorkRight"){
+			WorkNow = 3;
 		}
 	}
 }

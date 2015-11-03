@@ -9,9 +9,10 @@ public class LoadingScene : MonoBehaviour {
 	public GameObject Label01;
 	public GameObject guard1;
 	public GameObject workspace;
+	bool isAsync = false;
 	// Use this for initialization
 	void Start () {
-		if ((Global.GetInstance ().loadName == "Screen0101" || Global.GetInstance ().loadName == "Screen0102") && Application.loadedLevelName == "DemoLoading") {
+		if (Global.GetInstance ().loadName == "Screen0101" && Application.loadedLevelName == "DemoLoading") {
 			Robot01.SetActive (true);
 			Label01.SetActive (true);
 		} else {
@@ -20,29 +21,35 @@ public class LoadingScene : MonoBehaviour {
 			guard1.SetActive (false);
 			workspace.SetActive (false);
 		}
-		StartCoroutine(loadScene());//开始协程加载
+		Invoke("Temp",2);
 	}
 
 	void FixedUpdate () {
 		//神他妈加载进度到0.9就不动了……isDone参数无效……
-		if(async.progress >= 0.9f){
-			TextAim.GetComponent<UILabel>().text = "点击屏幕开始";
-			if(Input.GetMouseButtonDown(0)){
-				if(Global.GetInstance ().loadName == "Screen0101" || Global.GetInstance ().loadName == "Screen0102"){
-					//杀掉hotween序列动画（遇到过的bug）
-					Robot01_body.gameObject.GetComponent<RobotAnimLoad>().G_01.Kill();
+		if(isAsync == true){
+			if(async.progress >= 0.9f){
+				TextAim.GetComponent<UILabel>().text = "点击屏幕开始";
+				if(Input.GetMouseButtonDown(0)){
+					if(Global.GetInstance ().loadName == "Screen0101"){
+						//杀掉hotween序列动画（遇到过的bug）
+						Robot01_body.gameObject.GetComponent<RobotAnimLoad>().G_01.Kill();
+					}
+					isAsync = false;
+					async.allowSceneActivation = true;//启用协程加载完自动跳转关卡
 				}
-				async.allowSceneActivation = true;//启用协程加载完自动跳转关卡
 			}
 		}
 	}
 
 	IEnumerator loadScene()  
 	{  
+		isAsync = true;
 		async = Application.LoadLevelAsync(Global.GetInstance().loadName);
 		async.allowSceneActivation = false;//禁止协程加载完自动跳转关卡
 		yield return async;
 	}
 
-
+	public void Temp(){
+		StartCoroutine(loadScene());//开始协程加载
+	}
 }

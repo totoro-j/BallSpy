@@ -4,6 +4,7 @@ using Holoville.HOTween;
 
 public class CameraControl : MonoBehaviour {
 	public Camera Camera01;
+	public GameObject WinTag;
 
 	void Awake(){
 		Application.targetFrameRate = 30;	
@@ -14,8 +15,8 @@ public class CameraControl : MonoBehaviour {
 		case "DemoTech":
 			GameController.GetInstance().CameraSizeFollowed = 7.1f;//摄像机跟随时的画面深度
 			GameController.GetInstance().CameraSizeAll = 12.95f;//摄像机在观察者模式时的画面深度
-			GameController.GetInstance().ViewerLeftLine = -27.43f;//摄像机在观察者模式时的左极限
-			GameController.GetInstance().ViewerRightLine = 53.80f;//摄像机在观察者模式时的右极限
+			GameController.GetInstance().ViewerLeftLine = -23.70f;//摄像机在观察者模式时的左极限
+			GameController.GetInstance().ViewerRightLine = 51.00f;//摄像机在观察者模式时的右极限
 			GameController.GetInstance().ViewerUpLine = 7.00f;//摄像机在观察者模式时的上极限
 			GameController.GetInstance().ViewerDownLine = 6.80f;//摄像机在观察者模式时的下极限
 			GameController.GetInstance().FollowedLeftLine = -33.50f;//摄像机跟随时的左极限
@@ -24,8 +25,8 @@ public class CameraControl : MonoBehaviour {
 		case "Screen0101":
 			GameController.GetInstance().CameraSizeFollowed = 7.1f;//摄像机跟随时的画面深度
 			GameController.GetInstance().CameraSizeAll = 12.95f;//摄像机在观察者模式时的画面深度
-			GameController.GetInstance().ViewerLeftLine = -27.43f;//摄像机在观察者模式时的左极限
-			GameController.GetInstance().ViewerRightLine = 53.80f;//摄像机在观察者模式时的右极限
+			GameController.GetInstance().ViewerLeftLine = -23.40f;//摄像机在观察者模式时的左极限
+			GameController.GetInstance().ViewerRightLine = 50.00f;//摄像机在观察者模式时的右极限
 			GameController.GetInstance().ViewerUpLine = 7.00f;//摄像机在观察者模式时的上极限
 			GameController.GetInstance().ViewerDownLine = 6.80f;//摄像机在观察者模式时的下极限
 			GameController.GetInstance().FollowedLeftLine = -33.50f;//摄像机跟随时的左极限
@@ -34,8 +35,8 @@ public class CameraControl : MonoBehaviour {
 		case "Screen0102":
 			GameController.GetInstance().CameraSizeFollowed = 7.1f;//摄像机跟随时的画面深度
 			GameController.GetInstance().CameraSizeAll = 12.95f;//摄像机在观察者模式时的画面深度
-			GameController.GetInstance().ViewerLeftLine = -27.43f;//摄像机在观察者模式时的左极限
-			GameController.GetInstance().ViewerRightLine = 53.80f;//摄像机在观察者模式时的右极限
+			GameController.GetInstance().ViewerLeftLine = -23.60f;//摄像机在观察者模式时的左极限
+			GameController.GetInstance().ViewerRightLine = 34.70f;//摄像机在观察者模式时的右极限
 			GameController.GetInstance().ViewerUpLine = 14.00f;//摄像机在观察者模式时的上极限
 			GameController.GetInstance().ViewerDownLine = 6.80f;//摄像机在观察者模式时的下极限
 			GameController.GetInstance().FollowedLeftLine = -33.50f;//摄像机跟随时的左极限
@@ -44,39 +45,43 @@ public class CameraControl : MonoBehaviour {
         case "Screen0103":
             GameController.GetInstance().CameraSizeFollowed = 7.1f;//摄像机跟随时的画面深度
             GameController.GetInstance().CameraSizeAll = 12.95f;//摄像机在观察者模式时的画面深度
-            GameController.GetInstance().ViewerLeftLine = -27.43f;//摄像机在观察者模式时的左极限
-            GameController.GetInstance().ViewerRightLine = 53.80f;//摄像机在观察者模式时的右极限
+            GameController.GetInstance().ViewerLeftLine = -23.60f;//摄像机在观察者模式时的左极限
+            GameController.GetInstance().ViewerRightLine = 42.72f;//摄像机在观察者模式时的右极限
             GameController.GetInstance().ViewerUpLine = 14.00f;//摄像机在观察者模式时的上极限
-            GameController.GetInstance().ViewerDownLine = 6.80f;//摄像机在观察者模式时的下极限
+            GameController.GetInstance().ViewerDownLine = 7.71f;//摄像机在观察者模式时的下极限
             GameController.GetInstance().FollowedLeftLine = -33.50f;//摄像机跟随时的左极限
             GameController.GetInstance().FollowedRightLine = 60.00f;//摄像机跟随时的右极限
             break;
         case "Screen0104":
             GameController.GetInstance().CameraSizeFollowed = 7.1f;//摄像机跟随时的画面深度
             GameController.GetInstance().CameraSizeAll = 12.95f;//摄像机在观察者模式时的画面深度
-            GameController.GetInstance().ViewerLeftLine = -27.43f;//摄像机在观察者模式时的左极限
-            GameController.GetInstance().ViewerRightLine = 53.80f;//摄像机在观察者模式时的右极限
+            GameController.GetInstance().ViewerLeftLine = -23.60f;//摄像机在观察者模式时的左极限
+            GameController.GetInstance().ViewerRightLine = 42.72f;//摄像机在观察者模式时的右极限
             GameController.GetInstance().ViewerUpLine = 14.00f;//摄像机在观察者模式时的上极限
-            GameController.GetInstance().ViewerDownLine = 6.80f;//摄像机在观察者模式时的下极限
+            GameController.GetInstance().ViewerDownLine = 7.79f;//摄像机在观察者模式时的下极限
             GameController.GetInstance().FollowedLeftLine = -33.50f;//摄像机跟随时的左极限
             GameController.GetInstance().FollowedRightLine = 60.00f;//摄像机跟随时的右极限
             break;
         case "Screen0105":
             GameController.GetInstance().CameraSizeFollowed = 7.1f;//摄像机跟随时的画面深度
             GameController.GetInstance().CameraSizeAll = 12.95f;//摄像机在观察者模式时的画面深度
-            GameController.GetInstance().ViewerLeftLine = -27.43f;//摄像机在观察者模式时的左极限
-            GameController.GetInstance().ViewerRightLine = 53.80f;//摄像机在观察者模式时的右极限
-            GameController.GetInstance().ViewerUpLine = 14.00f;//摄像机在观察者模式时的上极限
-            GameController.GetInstance().ViewerDownLine = 6.80f;//摄像机在观察者模式时的下极限
+            GameController.GetInstance().ViewerLeftLine = -23.3f;//摄像机在观察者模式时的左极限
+            GameController.GetInstance().ViewerRightLine = 49.60f;//摄像机在观察者模式时的右极限
+            GameController.GetInstance().ViewerUpLine = 14.60f;//摄像机在观察者模式时的上极限
+            GameController.GetInstance().ViewerDownLine = -15.30f;//摄像机在观察者模式时的下极限
             GameController.GetInstance().FollowedLeftLine = -33.50f;//摄像机跟随时的左极限
             GameController.GetInstance().FollowedRightLine = 60.00f;//摄像机跟随时的右极限
             break;
 		}
 		Sequence CameraInitialization = new Sequence ();
 		CameraInitialization.Prepend (HOTween.To (Camera01, 2, new TweenParms ().Prop ("orthographicSize", GameController.GetInstance().CameraSizeFollowed).Ease (EaseType.EaseOutQuart)));
-		CameraInitialization.Insert (0, HOTween.To (Camera01.transform, 2, new TweenParms ().Prop ("position", new Vector3(GameController.GetInstance().FollowedLeftLine, GameController.GetInstance().CurrentPlayer.transform.position[1], Camera01.transform.position[2])).Ease (EaseType.EaseOutQuart)));
+		CameraInitialization.Insert (0, HOTween.To (Camera01.transform, 2, new TweenParms ().Prop ("position", new Vector3(WinTag.transform.position[0], WinTag.transform.position[1], Camera01.transform.position[2])).Ease (EaseType.EaseOutQuart)));
+		if(GameController.GetInstance().ViewerLeftLine - 2.0f <= GameController.GetInstance().CurrentPlayer.transform.position[0]){
+			CameraInitialization.Insert (3, HOTween.To (Camera01.transform, 2, new TweenParms ().Prop ("position", new Vector3(GameController.GetInstance().CurrentPlayer.transform.position[0], GameController.GetInstance().CurrentPlayer.transform.position[1], Camera01.transform.position[2])).Ease (EaseType.EaseOutQuart).OnComplete(CameraInitializationBack)));
+		}else{
+			CameraInitialization.Insert (3, HOTween.To (Camera01.transform, 2, new TweenParms ().Prop ("position", new Vector3(GameController.GetInstance().FollowedLeftLine, GameController.GetInstance().CurrentPlayer.transform.position[1], Camera01.transform.position[2])).Ease (EaseType.EaseOutQuart).OnComplete(CameraInitializationBack)));
+		}
 		CameraInitialization.Play ();
-		GameController.GetInstance().CameraInitializationState = true;
 	}
 
 	void Update(){
@@ -119,22 +124,18 @@ public class CameraControl : MonoBehaviour {
 					}
 
 					if(transform.position[0] < GameController.GetInstance().ViewerLeftLine && GameController.GetInstance().deltaMove[0] < 0){
-						print("Right");
 						transform.position = new Vector3(transform.position[0]-GameController.GetInstance().deltaMove[0]*0.02f,transform.position[1],-21.3f);
 					}
 
 					if(transform.position[0] > GameController.GetInstance().ViewerRightLine && GameController.GetInstance().deltaMove[0] > 0){
-						print("Left");
 						transform.position = new Vector3(transform.position[0]-GameController.GetInstance().deltaMove[0]*0.02f,transform.position[1],-21.3f);
 					}
 
 					if(transform.position[1] < GameController.GetInstance().ViewerDownLine && GameController.GetInstance().deltaMove[1] < 0){
-						print("Up");
 						transform.position = new Vector3(transform.position[0],transform.position[1]-GameController.GetInstance().deltaMove[1]*0.02f,-21.3f);
 					}
 
 					if(transform.position[1] > GameController.GetInstance().ViewerUpLine && GameController.GetInstance().deltaMove[1] > 0){
-						print("Down");
 						transform.position = new Vector3(transform.position[0],transform.position[1]-GameController.GetInstance().deltaMove[1]*0.02f,-21.3f);
 					}
 				}
@@ -169,5 +170,9 @@ public class CameraControl : MonoBehaviour {
 				}
 			}
 		}
+	}
+
+	void CameraInitializationBack(){
+		GameController.GetInstance().CameraInitializationState = true;
 	}
 }

@@ -50,6 +50,20 @@ public class SaveCheater : MonoBehaviour {
 				LevelScene = 1,
 				LevelSceneNum = 4,
 				LevelLock = false,
+				isCurrent = false,
+				LevelTime = 999999,
+				LevelStars = 0
+			}
+			);
+		}
+		if(GameController.GetInstance ().Levels.Count < 5){
+			GameController.GetInstance ().Levels[2].isCurrent = false;
+			GameController.GetInstance().Levels.Add(
+				new Level{
+				LevelNum = 5,
+				LevelScene = 1,
+				LevelSceneNum = 5,
+				LevelLock = false,
 				isCurrent = true,
 				LevelTime = 999999,
 				LevelStars = 0

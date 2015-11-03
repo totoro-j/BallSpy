@@ -22,7 +22,7 @@ public class IsWorkSpace : MonoBehaviour {
 	void OnTriggerStay(Collider IsWorkSpace){
 		//如果在工作台附近
 		if (IsWorkSpace.tag == "workspace") {
-			if(GetComponent<RobotGameOver>().isAvail == true){
+			if(gameObject.GetComponent<RobotGameOver>().isAvail == true){
 				//获取工作台名称前缀
 				CurrentWorkSpace = IsWorkSpace.name.Substring (start - 1, length);
 				GetComponent<WorkSpaceController> ().CurrentWorkSpaceType = IsWorkSpace.name.Substring (start - 1, lengthType);
@@ -39,7 +39,7 @@ public class IsWorkSpace : MonoBehaviour {
 
 		//用于解决多个机器人在一个工作台时隔离其他机器人
 		if(IsWorkSpace.tag == "workspace" || IsWorkSpace.tag == "Onlyworkspace" ){
-			if(GetComponent<RobotGameOver>().isAvail == false){
+			if(gameObject.GetComponent<RobotGameOver>().isAvail == false){
 				isworkspace = false;
 				IsWorkSpace.gameObject.GetComponent<AimCreater>().WorkSpaceComponent [0].SetActive (true);
 				IsWorkSpace.tag = "workspace";

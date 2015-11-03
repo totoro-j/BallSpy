@@ -737,7 +737,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collection: {fileID: 11470854, guid: 4de4245e9b70ee94686d6509ffb15050, type: 2}
-  _color: {r: 0, g: 0, b: 0, a: 1}
+  _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1.00439024, y: 1.51702428, z: 1}
   _spriteId: 9
   boxCollider2D: {fileID: 0}
@@ -873,6 +873,60 @@ MeshFilter:
 Transform:
   m_PrefabParentObject: {fileID: 430696, guid: 37a765bd91c259b46a66da99c1561e5e, type: 2}
   m_PrefabInternal: {fileID: 643795745}
+--- !u!1 &43685908
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 43685909}
+  - 65: {fileID: 43685911}
+  - 114: {fileID: 43685910}
+  m_Layer: 0
+  m_Name: Robot_2-Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &43685909
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 43685908}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .0181732178, y: .0254192352, z: -3.6523447}
+  m_LocalScale: {x: 1, y: 1, z: 11.1111107}
+  m_Children: []
+  m_Father: {fileID: 50708379}
+  m_RootOrder: 2
+--- !u!114 &43685910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 43685908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c07566d85bdfde4997c1bfb08aa4057, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsGameOver: {fileID: 0}
+  IsTriggered: 0
+--- !u!65 &43685911
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 43685908}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.1099999, y: 2.08999991, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &45453339
 GameObject:
   m_ObjectHideFlags: 0
@@ -991,6 +1045,7 @@ Transform:
   m_Children:
   - {fileID: 737193399}
   - {fileID: 806168314}
+  - {fileID: 43685909}
   m_Father: {fileID: 548243188}
   m_RootOrder: 2
 --- !u!65 &50708380
@@ -1660,7 +1715,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collection: {fileID: 11470854, guid: 4de4245e9b70ee94686d6509ffb15050, type: 2}
-  _color: {r: 0, g: 0, b: 0, a: 1}
+  _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: .995617211, y: 1.39922023, z: 1}
   _spriteId: 9
   boxCollider2D: {fileID: 0}
@@ -3679,7 +3734,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collection: {fileID: 11470854, guid: 4de4245e9b70ee94686d6509ffb15050, type: 2}
-  _color: {r: 0, g: 0, b: 0, a: 1}
+  _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1.01973152, y: 1.40209091, z: 1}
   _spriteId: 9
   boxCollider2D: {fileID: 0}
@@ -4924,6 +4979,8 @@ GameObject:
   - 114: {fileID: 257727227}
   - 114: {fileID: 257727228}
   - 114: {fileID: 257727233}
+  - 114: {fileID: 257727234}
+  - 114: {fileID: 257727235}
   m_Layer: 0
   m_Name: Robot_1-1
   m_TagString: RobotTrigger
@@ -4973,6 +5030,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa4a737c82368f341b341cf285ffee7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RobotGameOverTrigger: {fileID: 257727226}
   BallRobot: {fileID: 0}
   Camera01: {fileID: 0}
   TextAim: {fileID: 0}
@@ -5047,6 +5105,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Mist: {fileID: 963417153}
+--- !u!114 &257727234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 257727226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c07566d85bdfde4997c1bfb08aa4057, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsGameOver: {fileID: 0}
+  IsTriggered: 0
+--- !u!114 &257727235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 257727226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c07566d85bdfde4997c1bfb08aa4057, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsGameOver: {fileID: 0}
+  IsTriggered: 0
 --- !u!1 &270392876
 GameObject:
   m_ObjectHideFlags: 0
@@ -5939,11 +6023,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 306800354}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<< HEAD
-  m_LocalPosition: {x: -40.5900002, y: 5.44000006, z: 0}
-=======
-  m_LocalPosition: {x: -40.6899986, y: 5.51999998, z: 0}
->>>>>>> c4a571c2670a2869aa72898db72432b3bafe63cf
+  m_LocalPosition: {x: -40.5499992, y: 5.4000001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -7055,11 +7135,7 @@ MonoBehaviour:
   collection: {fileID: 11470854, guid: 4de4245e9b70ee94686d6509ffb15050, type: 2}
   _color: {r: 1, g: 1, b: 1, a: .576470613}
   _scale: {x: 3.2134366, y: 4.34147501, z: 1}
-<<<<<<< HEAD
-  _spriteId: 1
-=======
   _spriteId: 11
->>>>>>> c4a571c2670a2869aa72898db72432b3bafe63cf
   boxCollider2D: {fileID: 0}
   polygonCollider2D: []
   edgeCollider2D: []
@@ -8574,11 +8650,7 @@ MonoBehaviour:
   collection: {fileID: 11470854, guid: 4de4245e9b70ee94686d6509ffb15050, type: 2}
   _color: {r: 1, g: 1, b: 1, a: .576470613}
   _scale: {x: 3.22085619, y: 4.32580233, z: 1}
-<<<<<<< HEAD
-  _spriteId: 1
-=======
   _spriteId: 11
->>>>>>> c4a571c2670a2869aa72898db72432b3bafe63cf
   boxCollider2D: {fileID: 0}
   polygonCollider2D: []
   edgeCollider2D: []
@@ -13150,7 +13222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collection: {fileID: 11470854, guid: 4de4245e9b70ee94686d6509ffb15050, type: 2}
-  _color: {r: 0, g: 0, b: 0, a: 1}
+  _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 2.02536845, y: 1.27107167, z: 1}
   _spriteId: 9
   boxCollider2D: {fileID: 0}
@@ -14441,11 +14513,7 @@ MonoBehaviour:
   collection: {fileID: 11470854, guid: 4de4245e9b70ee94686d6509ffb15050, type: 2}
   _color: {r: 1, g: 1, b: 1, a: .576470613}
   _scale: {x: 3.21317673, y: 6.7030983, z: 1}
-<<<<<<< HEAD
-  _spriteId: 1
-=======
   _spriteId: 11
->>>>>>> c4a571c2670a2869aa72898db72432b3bafe63cf
   boxCollider2D: {fileID: 0}
   polygonCollider2D: []
   edgeCollider2D: []
@@ -14529,7 +14597,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collection: {fileID: 11470854, guid: 4de4245e9b70ee94686d6509ffb15050, type: 2}
-  _color: {r: 0, g: 0, b: 0, a: 1}
+  _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 2.01078367, y: 1.26472235, z: 1}
   _spriteId: 9
   boxCollider2D: {fileID: 0}
@@ -14595,10 +14663,10 @@ GameObject:
   - 4: {fileID: 737193399}
   - 65: {fileID: 737193404}
   - 114: {fileID: 737193403}
-  - 114: {fileID: 737193402}
   - 114: {fileID: 737193401}
   - 114: {fileID: 737193400}
   - 114: {fileID: 737193405}
+  - 114: {fileID: 737193402}
   m_Layer: 0
   m_Name: Robot_2-1
   m_TagString: RobotTrigger
@@ -14651,8 +14719,7 @@ MonoBehaviour:
 --- !u!114 &737193402
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11472970, guid: 89f3fa11e9f63c0499f06d72c0706d0f,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 737193398}
   m_Enabled: 1
@@ -14660,6 +14727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa4a737c82368f341b341cf285ffee7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RobotGameOverTrigger: {fileID: 43685908}
   BallRobot: {fileID: 0}
   Camera01: {fileID: 0}
   TextAim: {fileID: 0}
@@ -17423,6 +17491,8 @@ GameObject:
   - 114: {fileID: 832296239}
   - 114: {fileID: 832296237}
   - 114: {fileID: 832296243}
+  - 114: {fileID: 832296244}
+  - 114: {fileID: 832296245}
   m_Layer: 0
   m_Name: Robot_5-1
   m_TagString: RobotTrigger
@@ -17484,6 +17554,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa4a737c82368f341b341cf285ffee7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RobotGameOverTrigger: {fileID: 832296236}
   BallRobot: {fileID: 0}
   Camera01: {fileID: 0}
   TextAim: {fileID: 0}
@@ -17546,6 +17617,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Mist: {fileID: 963417153}
+--- !u!114 &832296244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 832296236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c07566d85bdfde4997c1bfb08aa4057, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsGameOver: {fileID: 0}
+  IsTriggered: 0
+--- !u!114 &832296245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 832296236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c07566d85bdfde4997c1bfb08aa4057, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsGameOver: {fileID: 0}
+  IsTriggered: 0
 --- !u!1 &843564719
 GameObject:
   m_ObjectHideFlags: 0
@@ -18634,7 +18731,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collection: {fileID: 11470854, guid: 4de4245e9b70ee94686d6509ffb15050, type: 2}
-  _color: {r: 0, g: 0, b: 0, a: 1}
+  _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 2.00592327, y: 1.26628709, z: 1}
   _spriteId: 9
   boxCollider2D: {fileID: 0}
@@ -20541,11 +20638,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 962854885}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<< HEAD
-  m_LocalPosition: {x: 64.3779068, y: 46.4459953, z: 0}
-=======
-  m_LocalPosition: {x: 64.313591, y: 46.4459953, z: 0}
->>>>>>> c4a571c2670a2869aa72898db72432b3bafe63cf
+  m_LocalPosition: {x: 64.2669373, y: 46.4459953, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1965094725}
@@ -20945,7 +21038,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collection: {fileID: 11470854, guid: 4de4245e9b70ee94686d6509ffb15050, type: 2}
-  _color: {r: 0, g: 0, b: 0, a: 1}
+  _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: .995617211, y: 1.38540757, z: 1}
   _spriteId: 9
   boxCollider2D: {fileID: 0}
@@ -21117,7 +21210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collection: {fileID: 11470854, guid: 4de4245e9b70ee94686d6509ffb15050, type: 2}
-  _color: {r: 0, g: 0, b: 0, a: 1}
+  _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1.01670384, y: 1.26657653, z: 1}
   _spriteId: 9
   boxCollider2D: {fileID: 0}
@@ -21498,6 +21591,8 @@ GameObject:
   - 114: {fileID: 1007553697}
   - 114: {fileID: 1007553696}
   - 114: {fileID: 1007553701}
+  - 114: {fileID: 1007553702}
+  - 114: {fileID: 1007553703}
   m_Layer: 0
   m_Name: Robot_3-1
   m_TagString: RobotTrigger
@@ -21559,6 +21654,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa4a737c82368f341b341cf285ffee7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RobotGameOverTrigger: {fileID: 1007553694}
   BallRobot: {fileID: 0}
   Camera01: {fileID: 0}
   TextAim: {fileID: 0}
@@ -21621,6 +21717,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Mist: {fileID: 963417153}
+--- !u!114 &1007553702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1007553694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c07566d85bdfde4997c1bfb08aa4057, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsGameOver: {fileID: 0}
+  IsTriggered: 0
+--- !u!114 &1007553703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1007553694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c07566d85bdfde4997c1bfb08aa4057, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsGameOver: {fileID: 0}
+  IsTriggered: 0
 --- !u!1 &1008545215
 GameObject:
   m_ObjectHideFlags: 0
@@ -21677,7 +21799,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collection: {fileID: 11470854, guid: 4de4245e9b70ee94686d6509ffb15050, type: 2}
-  _color: {r: 0, g: 0, b: 0, a: 1}
+  _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1.01396501, y: 1.52161789, z: 1}
   _spriteId: 9
   boxCollider2D: {fileID: 0}
@@ -21849,7 +21971,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collection: {fileID: 11470854, guid: 4de4245e9b70ee94686d6509ffb15050, type: 2}
-  _color: {r: 0, g: 0, b: 0, a: 1}
+  _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 3.00769281, y: 1.27409375, z: 1}
   _spriteId: 9
   boxCollider2D: {fileID: 0}
@@ -25022,7 +25144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collection: {fileID: 11470854, guid: 4de4245e9b70ee94686d6509ffb15050, type: 2}
-  _color: {r: 0, g: 0, b: 0, a: 1}
+  _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1.01396501, y: 1.39945388, z: 1}
   _spriteId: 9
   boxCollider2D: {fileID: 0}
@@ -26820,7 +26942,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collection: {fileID: 11470854, guid: 4de4245e9b70ee94686d6509ffb15050, type: 2}
-  _color: {r: 0, g: 0, b: 0, a: 1}
+  _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 3.00870991, y: 1.26598728, z: 1}
   _spriteId: 9
   boxCollider2D: {fileID: 0}
@@ -30049,7 +30171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collection: {fileID: 11470854, guid: 4de4245e9b70ee94686d6509ffb15050, type: 2}
-  _color: {r: 0, g: 0, b: 0, a: 1}
+  _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1.02015114, y: 1.27409375, z: 1}
   _spriteId: 9
   boxCollider2D: {fileID: 0}
@@ -30870,6 +30992,8 @@ GameObject:
   - 114: {fileID: 1372948741}
   - 114: {fileID: 1372948740}
   - 114: {fileID: 1372948745}
+  - 114: {fileID: 1372948746}
+  - 114: {fileID: 1372948747}
   m_Layer: 0
   m_Name: Robot_3-1
   m_TagString: RobotTrigger
@@ -30931,6 +31055,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa4a737c82368f341b341cf285ffee7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RobotGameOverTrigger: {fileID: 1372948738}
   BallRobot: {fileID: 0}
   Camera01: {fileID: 0}
   TextAim: {fileID: 0}
@@ -30993,6 +31118,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Mist: {fileID: 963417153}
+--- !u!114 &1372948746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1372948738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c07566d85bdfde4997c1bfb08aa4057, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsGameOver: {fileID: 0}
+  IsTriggered: 0
+--- !u!114 &1372948747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1372948738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c07566d85bdfde4997c1bfb08aa4057, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsGameOver: {fileID: 0}
+  IsTriggered: 0
 --- !u!1 &1374420118
 GameObject:
   m_ObjectHideFlags: 0
@@ -31067,6 +31218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Camera01: {fileID: 1378239526}
+  WinTag: {fileID: 533811533}
 --- !u!81 &1378239523
 AudioListener:
   m_ObjectHideFlags: 0
@@ -31418,7 +31570,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collection: {fileID: 11470854, guid: 4de4245e9b70ee94686d6509ffb15050, type: 2}
-  _color: {r: 0, g: 0, b: 0, a: 1}
+  _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 4.00079727, y: 1.26508105, z: 1}
   _spriteId: 9
   boxCollider2D: {fileID: 0}
@@ -32126,6 +32278,8 @@ GameObject:
   - 114: {fileID: 1434809319}
   - 114: {fileID: 1434809318}
   - 114: {fileID: 1434809323}
+  - 114: {fileID: 1434809324}
+  - 114: {fileID: 1434809325}
   m_Layer: 0
   m_Name: Robot_4-1
   m_TagString: RobotTrigger
@@ -32187,6 +32341,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa4a737c82368f341b341cf285ffee7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RobotGameOverTrigger: {fileID: 1434809316}
   BallRobot: {fileID: 0}
   Camera01: {fileID: 0}
   TextAim: {fileID: 0}
@@ -32249,6 +32404,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Mist: {fileID: 963417153}
+--- !u!114 &1434809324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1434809316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c07566d85bdfde4997c1bfb08aa4057, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsGameOver: {fileID: 0}
+  IsTriggered: 0
+--- !u!114 &1434809325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1434809316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c07566d85bdfde4997c1bfb08aa4057, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsGameOver: {fileID: 0}
+  IsTriggered: 0
 --- !u!1 &1439454954
 GameObject:
   m_ObjectHideFlags: 0
@@ -32304,6 +32485,8 @@ GameObject:
   - 114: {fileID: 1443298737}
   - 114: {fileID: 1443298736}
   - 114: {fileID: 1443298741}
+  - 114: {fileID: 1443298742}
+  - 114: {fileID: 1443298743}
   m_Layer: 0
   m_Name: Robot_1-1
   m_TagString: RobotTrigger
@@ -32365,6 +32548,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa4a737c82368f341b341cf285ffee7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RobotGameOverTrigger: {fileID: 1443298734}
   BallRobot: {fileID: 0}
   Camera01: {fileID: 0}
   TextAim: {fileID: 0}
@@ -32427,6 +32611,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Mist: {fileID: 963417153}
+--- !u!114 &1443298742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1443298734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c07566d85bdfde4997c1bfb08aa4057, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsGameOver: {fileID: 0}
+  IsTriggered: 0
+--- !u!114 &1443298743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1443298734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c07566d85bdfde4997c1bfb08aa4057, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsGameOver: {fileID: 0}
+  IsTriggered: 0
 --- !u!1001 &1448140302
 Prefab:
   m_ObjectHideFlags: 0
@@ -33792,11 +34002,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: m_LocalPosition.x
-<<<<<<< HEAD
-      value: 79.3779297
-=======
-      value: 79.3135986
->>>>>>> c4a571c2670a2869aa72898db72432b3bafe63cf
+      value: 79.2669678
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: m_LocalPosition.y
@@ -34577,7 +34783,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collection: {fileID: 11470854, guid: 4de4245e9b70ee94686d6509ffb15050, type: 2}
-  _color: {r: 0, g: 0, b: 0, a: 1}
+  _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1.98202538, y: 1.26861835, z: 1}
   _spriteId: 9
   boxCollider2D: {fileID: 0}
@@ -35373,7 +35579,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collection: {fileID: 11470854, guid: 4de4245e9b70ee94686d6509ffb15050, type: 2}
-  _color: {r: 0, g: 0, b: 0, a: 1}
+  _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1.99956536, y: 1.26624537, z: 1}
   _spriteId: 9
   boxCollider2D: {fileID: 0}
@@ -38678,7 +38884,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collection: {fileID: 11470854, guid: 4de4245e9b70ee94686d6509ffb15050, type: 2}
-  _color: {r: 0, g: 0, b: 0, a: 1}
+  _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1.01905441, y: 1.37637138, z: 1}
   _spriteId: 9
   boxCollider2D: {fileID: 0}
@@ -38943,10 +39149,7 @@ MonoBehaviour:
   CurrentLevelSceneNum: 0
   CurrentLevelNum: 0
   CurrentLevelScene: 0
-<<<<<<< HEAD
   TimeRecorder: 0
-=======
->>>>>>> c4a571c2670a2869aa72898db72432b3bafe63cf
 --- !u!1 &1786276039
 GameObject:
   m_ObjectHideFlags: 0
@@ -42772,7 +42975,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collection: {fileID: 11470854, guid: 4de4245e9b70ee94686d6509ffb15050, type: 2}
-  _color: {r: 0, g: 0, b: 0, a: 1}
+  _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1.0043906, y: 1.38854098, z: 1}
   _spriteId: 9
   boxCollider2D: {fileID: 0}
@@ -42816,7 +43019,6 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-<<<<<<< HEAD
 --- !u!1 &1970161280
 GameObject:
   m_ObjectHideFlags: 0
@@ -42828,7 +43030,7 @@ GameObject:
   - 114: {fileID: 1970161282}
   - 114: {fileID: 1970161283}
   m_Layer: 5
-  m_Name: Label
+  m_Name: TimeLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42919,8 +43121,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c47ad4e6cbbb834fa3b53aaaa558ed8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-=======
->>>>>>> c4a571c2670a2869aa72898db72432b3bafe63cf
 --- !u!1 &1971969003
 GameObject:
   m_ObjectHideFlags: 0
@@ -42977,7 +43177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collection: {fileID: 11470854, guid: 4de4245e9b70ee94686d6509ffb15050, type: 2}
-  _color: {r: 0, g: 0, b: 0, a: 1}
+  _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1.01396501, y: 1.37616158, z: 1}
   _spriteId: 9
   boxCollider2D: {fileID: 0}
@@ -45623,7 +45823,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collection: {fileID: 11470854, guid: 4de4245e9b70ee94686d6509ffb15050, type: 2}
-  _color: {r: 0, g: 0, b: 0, a: 1}
+  _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: .995449305, y: 1.39180553, z: 1}
   _spriteId: 9
   boxCollider2D: {fileID: 0}
@@ -45994,7 +46194,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collection: {fileID: 11470854, guid: 4de4245e9b70ee94686d6509ffb15050, type: 2}
-  _color: {r: 0, g: 0, b: 0, a: 1}
+  _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 3.01395297, y: 1.26971376, z: 1}
   _spriteId: 9
   boxCollider2D: {fileID: 0}

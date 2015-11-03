@@ -20,6 +20,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Screen0104.unity
   - enabled: 1
+    path: Assets/Screen0105.unity
+  - enabled: 1
     path: Assets/DemoTech.unity
   - enabled: 1
     path: Assets/DemoOver.unity

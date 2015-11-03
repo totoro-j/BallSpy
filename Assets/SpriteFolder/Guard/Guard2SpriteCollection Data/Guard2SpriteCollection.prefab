@@ -43,6 +43,48 @@ MonoBehaviour:
   materialIdsValid: 1
   needMaterialInstance: 0
   spriteDefinitions:
+  - name: 
+    boundsData:
+    - {x: .310000002, y: -.310000002, z: 0}
+    - {x: .639999986, y: .639999986, z: 0}
+    untrimmedBoundsData:
+    - {x: .310000002, y: -.310000002, z: 0}
+    - {x: .639999986, y: .639999986, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.00999999978, y: -.629999995, z: 0}
+    - {x: .629999995, y: -.629999995, z: 0}
+    - {x: -.00999999978, y: .00999999046, z: 0}
+    - {x: .629999995, y: .00999999046, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .000977050746, y: .740234852}
+    - {x: .00195263675, y: .740234852}
+    - {x: .000977050746, y: .741210461}
+    - {x: .00195263675, y: .741210461}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 642b4a400e461ca4d932754f925037d7, type: 2}
+    materialId: 0
+    sourceTextureGUID: 
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
   - name: x4
     boundsData:
     - {x: -.510000229, y: -.210000277, z: 0}
@@ -66,7 +108,7 @@ MonoBehaviour:
     indices: 000000000300000001000000020000000300000000000000
     material: {fileID: 2100000, guid: 642b4a400e461ca4d932754f925037d7, type: 2}
     materialId: 0
-    sourceTextureGUID: ed16e53191adb95468ed2ef0609b5444
+    sourceTextureGUID: 95862a21ca66ae94ab646fe87d67f583
     extractRegion: 0
     regionX: 0
     regionY: 0
@@ -78,24 +120,21 @@ MonoBehaviour:
     colliderType: 3
     customColliders: []
     colliderVertices:
-    - {x: -8.01000023, y: 7.31999969, z: -.100000001}
-    - {x: -8.01000023, y: 7.31999969, z: .100000001}
-    - {x: 1.63999939, y: -2.30999994, z: -.100000001}
-    - {x: 1.63999939, y: -2.30999994, z: .100000001}
-    - {x: 7.04999924, y: -7.75999975, z: -.100000001}
-    - {x: 7.04999924, y: -7.75999975, z: .100000001}
-    - {x: 7.05999947, y: 7.34000015, z: -.100000001}
-    - {x: 7.05999947, y: 7.34000015, z: .100000001}
-    colliderIndicesFwd: 020000000100000000000000020000000300000001000000040000000500000002000000020000000500000003000000060000000500000004000000060000000700000005000000000000000100000006000000060000000100000007000000060000000400000002000000020000000000000006000000030000000500000007000000070000000100000003000000
-    colliderIndicesBack: 000000000100000002000000010000000300000002000000020000000500000004000000030000000500000002000000040000000500000006000000050000000700000006000000060000000100000000000000070000000100000006000000020000000400000006000000060000000000000002000000070000000500000003000000030000000100000007000000
-    colliderConvex: 0
+    - {x: -8.03999996, y: 7.36999989, z: -.100000001}
+    - {x: -8.03999996, y: 7.36999989, z: .100000001}
+    - {x: 7.04999924, y: -7.78999996, z: -.100000001}
+    - {x: 7.04999924, y: -7.78999996, z: .100000001}
+    - {x: 7.03999996, y: 7.34000015, z: -.100000001}
+    - {x: 7.03999996, y: 7.34000015, z: .100000001}
+    colliderIndicesFwd: 020000000300000000000000000000000300000001000000040000000300000002000000040000000500000003000000000000000100000004000000040000000100000005000000020000000000000004000000050000000100000003000000
+    colliderIndicesBack: 000000000300000002000000010000000300000000000000020000000300000004000000030000000500000004000000040000000100000000000000050000000100000004000000040000000000000002000000030000000100000005000000
+    colliderConvex: 1
     colliderSmoothSphereCollisions: 0
     polygonCollider2D:
     - points:
-      - {x: -8.01000023, y: 7.31999969}
-      - {x: 1.63999939, y: -2.30999994}
-      - {x: 7.04999924, y: -7.75999975}
-      - {x: 7.05999947, y: 7.34000015}
+      - {x: -8.03999996, y: 7.36999989}
+      - {x: 7.04999924, y: -7.78999996}
+      - {x: 7.03999996, y: 7.34000015}
     edgeCollider2D: []
     attachPoints: []
   premultipliedAlpha: 0
@@ -109,13 +148,13 @@ MonoBehaviour:
   textureFilterMode: 1
   textureMipMaps: 0
   allowMultipleAtlases: 0
-  spriteCollectionGUID: deb506c1e27971e449c91d68c6f65198
+  spriteCollectionGUID: a8297fd6bde995649951305e2e80f3e9
   spriteCollectionName: Guard2SpriteCollection
   assetName: 
   loadable: 0
   invOrthoSize: 2
   halfTargetHeight: 50
-  buildKey: 1360430314
+  buildKey: 986973228
   dataGuid: 95e18763ed64b1c4e8a7eaed0b92fb97
   managedSpriteCollection: 0
   hasPlatformData: 0

@@ -24,37 +24,35 @@ public class GuardRouteSet : MonoBehaviour {
         _childNum = 0;
         _Rotation = new Vector3(0, 0, 0);
         _GuardRotate();
-
-
 	}
 	
 	// Update is called once per frame
 	void Update () {
-    }
-private void _GuardTraslation(){
-    while (_childNum >= _Children.Count) {
-        _childNum = -1;
-    }
-    _childNum=_childNum+1;
-    _child=_Children[_childNum];
-    HOTween.To(transform.parent.transform.parent.gameObject.transform, time, new TweenParms().Prop("position", _child.transform.position).OnComplete(_GuardRotate));
-}
+    
+	}
 
-private void _GuardRotate(){
-    if (_Rotation.z == 0) {
-        _Rotation.z = 57;
-    }
-    else if (_Rotation.z == 57) {
-        _Rotation.z = 114;
-    }
-    else if (_Rotation.z == 114) {
-        _Rotation.z = 237;
-    }
-    else if (_Rotation.z == 237) {
-        _Rotation.z = 0;
-    }
-    HOTween.To(transform.parent.gameObject.transform, 1, new TweenParms().Prop("rotation", _Rotation).OnComplete(_GuardTraslation));
-}
+	private void _GuardTraslation(){
+    	if (_childNum == _Children.Count-1) {
+    	    _childNum = -1;
+    	}
+    	_childNum = _childNum + 1;
+    	_child=_Children[_childNum];
+    	HOTween.To(transform.parent.transform.parent.gameObject.transform, time, new TweenParms().Prop("position", _child.transform.position).OnComplete(_GuardRotate));
+	}
 
-
+	private void _GuardRotate(){
+	    if (_Rotation.z == 0) {
+	        _Rotation.z = 57;
+	    }
+	    else if (_Rotation.z == 57) {
+	        _Rotation.z = 114;
+	    }
+    	else if (_Rotation.z == 114) {
+    	    _Rotation.z = 237;
+    	}
+   	 	else if (_Rotation.z == 237) {
+        	_Rotation.z = 0;
+	    }
+	    HOTween.To(transform.parent.gameObject.transform, 1, new TweenParms().Prop("rotation", _Rotation).OnComplete(_GuardTraslation));
+	}
 }

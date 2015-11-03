@@ -33,4 +33,4 @@ using System.Collections.Generic;
 	public void Temp(){
 		gameObject.transform.parent.gameObject.GetComponent<AnimationForActivate>().ActivateAnimation();
 	}
-	}
+}

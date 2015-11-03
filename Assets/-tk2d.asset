@@ -1401,14 +1401,17 @@ MonoBehaviour:
     assetName: 
     version: 3
   - name: Guard2SpriteCollection
-    spriteCollectionGUID: deb506c1e27971e449c91d68c6f65198
+    spriteCollectionGUID: a8297fd6bde995649951305e2e80f3e9
     spriteCollectionDataGUID: 95e18763ed64b1c4e8a7eaed0b92fb97
     spriteNames:
+    - 
     - x4
     spriteTextureGUIDs:
-    - ed16e53191adb95468ed2ef0609b5444
+    - 
+    - 95862a21ca66ae94ab646fe87d67f583
     spriteTextureTimeStamps:
     - 0
+    - 1446406325.34179
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
