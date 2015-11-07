@@ -3507,6 +3507,1526 @@ MonoBehaviour:
     fps: 30
     loopStart: 0
     wrapMode: 2
+  - name: Robot_b1_Stop
+    frames:
+    - spriteCollection: {fileID: 11467094, guid: bd565cb8fe60e944a854989321a87f23,
+        type: 2}
+      spriteId: 12
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    fps: 30
+    loopStart: 0
+    wrapMode: 0
+  - name: Robot_b1_walk
+    frames:
+    - spriteCollection: {fileID: 11467094, guid: bd565cb8fe60e944a854989321a87f23,
+        type: 2}
+      spriteId: 12
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11467094, guid: bd565cb8fe60e944a854989321a87f23,
+        type: 2}
+      spriteId: 6
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11467094, guid: bd565cb8fe60e944a854989321a87f23,
+        type: 2}
+      spriteId: 10
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11467094, guid: bd565cb8fe60e944a854989321a87f23,
+        type: 2}
+      spriteId: 19
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11467094, guid: bd565cb8fe60e944a854989321a87f23,
+        type: 2}
+      spriteId: 0
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11467094, guid: bd565cb8fe60e944a854989321a87f23,
+        type: 2}
+      spriteId: 18
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11467094, guid: bd565cb8fe60e944a854989321a87f23,
+        type: 2}
+      spriteId: 16
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11467094, guid: bd565cb8fe60e944a854989321a87f23,
+        type: 2}
+      spriteId: 17
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11467094, guid: bd565cb8fe60e944a854989321a87f23,
+        type: 2}
+      spriteId: 11
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11467094, guid: bd565cb8fe60e944a854989321a87f23,
+        type: 2}
+      spriteId: 3
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11467094, guid: bd565cb8fe60e944a854989321a87f23,
+        type: 2}
+      spriteId: 8
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11467094, guid: bd565cb8fe60e944a854989321a87f23,
+        type: 2}
+      spriteId: 2
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11467094, guid: bd565cb8fe60e944a854989321a87f23,
+        type: 2}
+      spriteId: 9
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11467094, guid: bd565cb8fe60e944a854989321a87f23,
+        type: 2}
+      spriteId: 4
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11467094, guid: bd565cb8fe60e944a854989321a87f23,
+        type: 2}
+      spriteId: 7
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11467094, guid: bd565cb8fe60e944a854989321a87f23,
+        type: 2}
+      spriteId: 5
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11467094, guid: bd565cb8fe60e944a854989321a87f23,
+        type: 2}
+      spriteId: 14
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11467094, guid: bd565cb8fe60e944a854989321a87f23,
+        type: 2}
+      spriteId: 15
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11467094, guid: bd565cb8fe60e944a854989321a87f23,
+        type: 2}
+      spriteId: 1
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    fps: 40
+    loopStart: 0
+    wrapMode: 2
+  - name: Robot_b3_work
+    frames:
+    - spriteCollection: {fileID: 11449018, guid: 5fa090d7fbe5b9e49bce5b47c62cbbd8,
+        type: 2}
+      spriteId: 10
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11449018, guid: 5fa090d7fbe5b9e49bce5b47c62cbbd8,
+        type: 2}
+      spriteId: 9
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11449018, guid: 5fa090d7fbe5b9e49bce5b47c62cbbd8,
+        type: 2}
+      spriteId: 11
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11449018, guid: 5fa090d7fbe5b9e49bce5b47c62cbbd8,
+        type: 2}
+      spriteId: 4
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11449018, guid: 5fa090d7fbe5b9e49bce5b47c62cbbd8,
+        type: 2}
+      spriteId: 6
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11449018, guid: 5fa090d7fbe5b9e49bce5b47c62cbbd8,
+        type: 2}
+      spriteId: 2
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11449018, guid: 5fa090d7fbe5b9e49bce5b47c62cbbd8,
+        type: 2}
+      spriteId: 0
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11449018, guid: 5fa090d7fbe5b9e49bce5b47c62cbbd8,
+        type: 2}
+      spriteId: 1
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11449018, guid: 5fa090d7fbe5b9e49bce5b47c62cbbd8,
+        type: 2}
+      spriteId: 7
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11449018, guid: 5fa090d7fbe5b9e49bce5b47c62cbbd8,
+        type: 2}
+      spriteId: 8
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11449018, guid: 5fa090d7fbe5b9e49bce5b47c62cbbd8,
+        type: 2}
+      spriteId: 5
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11449018, guid: 5fa090d7fbe5b9e49bce5b47c62cbbd8,
+        type: 2}
+      spriteId: 3
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    fps: 40
+    loopStart: 0
+    wrapMode: 0
+  - name: Robot_b1_work
+    frames:
+    - spriteCollection: {fileID: 11407856, guid: 36ff757a89041dc47a34a7035f485a5a,
+        type: 2}
+      spriteId: 11
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11407856, guid: 36ff757a89041dc47a34a7035f485a5a,
+        type: 2}
+      spriteId: 3
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11407856, guid: 36ff757a89041dc47a34a7035f485a5a,
+        type: 2}
+      spriteId: 7
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11407856, guid: 36ff757a89041dc47a34a7035f485a5a,
+        type: 2}
+      spriteId: 5
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11407856, guid: 36ff757a89041dc47a34a7035f485a5a,
+        type: 2}
+      spriteId: 2
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11407856, guid: 36ff757a89041dc47a34a7035f485a5a,
+        type: 2}
+      spriteId: 10
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11407856, guid: 36ff757a89041dc47a34a7035f485a5a,
+        type: 2}
+      spriteId: 4
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11407856, guid: 36ff757a89041dc47a34a7035f485a5a,
+        type: 2}
+      spriteId: 6
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11407856, guid: 36ff757a89041dc47a34a7035f485a5a,
+        type: 2}
+      spriteId: 1
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11407856, guid: 36ff757a89041dc47a34a7035f485a5a,
+        type: 2}
+      spriteId: 9
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11407856, guid: 36ff757a89041dc47a34a7035f485a5a,
+        type: 2}
+      spriteId: 8
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    fps: 40
+    loopStart: 0
+    wrapMode: 0
+  - name: Robot_b2_work
+    frames:
+    - spriteCollection: {fileID: 11407758, guid: 323a24dd3011cfc4dbe1643bd5b2d028,
+        type: 2}
+      spriteId: 0
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11407758, guid: 323a24dd3011cfc4dbe1643bd5b2d028,
+        type: 2}
+      spriteId: 1
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11407758, guid: 323a24dd3011cfc4dbe1643bd5b2d028,
+        type: 2}
+      spriteId: 2
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11407758, guid: 323a24dd3011cfc4dbe1643bd5b2d028,
+        type: 2}
+      spriteId: 3
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11407758, guid: 323a24dd3011cfc4dbe1643bd5b2d028,
+        type: 2}
+      spriteId: 4
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11407758, guid: 323a24dd3011cfc4dbe1643bd5b2d028,
+        type: 2}
+      spriteId: 5
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11407758, guid: 323a24dd3011cfc4dbe1643bd5b2d028,
+        type: 2}
+      spriteId: 6
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11407758, guid: 323a24dd3011cfc4dbe1643bd5b2d028,
+        type: 2}
+      spriteId: 7
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11407758, guid: 323a24dd3011cfc4dbe1643bd5b2d028,
+        type: 2}
+      spriteId: 8
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11407758, guid: 323a24dd3011cfc4dbe1643bd5b2d028,
+        type: 2}
+      spriteId: 9
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11407758, guid: 323a24dd3011cfc4dbe1643bd5b2d028,
+        type: 2}
+      spriteId: 10
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11407758, guid: 323a24dd3011cfc4dbe1643bd5b2d028,
+        type: 2}
+      spriteId: 11
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    fps: 40
+    loopStart: 0
+    wrapMode: 0
+  - name: Robot_b2_Stop
+    frames:
+    - spriteCollection: {fileID: 11407758, guid: 323a24dd3011cfc4dbe1643bd5b2d028,
+        type: 2}
+      spriteId: 11
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    fps: 30
+    loopStart: 0
+    wrapMode: 0
+  - name: Robot_b2_walk
+    frames:
+    - spriteCollection: {fileID: 11402870, guid: 857d6f8eefc583748936eb60140b5a59,
+        type: 2}
+      spriteId: 9
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11402870, guid: 857d6f8eefc583748936eb60140b5a59,
+        type: 2}
+      spriteId: 13
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11402870, guid: 857d6f8eefc583748936eb60140b5a59,
+        type: 2}
+      spriteId: 17
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11402870, guid: 857d6f8eefc583748936eb60140b5a59,
+        type: 2}
+      spriteId: 10
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11402870, guid: 857d6f8eefc583748936eb60140b5a59,
+        type: 2}
+      spriteId: 14
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11402870, guid: 857d6f8eefc583748936eb60140b5a59,
+        type: 2}
+      spriteId: 16
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11402870, guid: 857d6f8eefc583748936eb60140b5a59,
+        type: 2}
+      spriteId: 2
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11402870, guid: 857d6f8eefc583748936eb60140b5a59,
+        type: 2}
+      spriteId: 3
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11402870, guid: 857d6f8eefc583748936eb60140b5a59,
+        type: 2}
+      spriteId: 12
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11402870, guid: 857d6f8eefc583748936eb60140b5a59,
+        type: 2}
+      spriteId: 5
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11402870, guid: 857d6f8eefc583748936eb60140b5a59,
+        type: 2}
+      spriteId: 8
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11402870, guid: 857d6f8eefc583748936eb60140b5a59,
+        type: 2}
+      spriteId: 6
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11402870, guid: 857d6f8eefc583748936eb60140b5a59,
+        type: 2}
+      spriteId: 4
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11402870, guid: 857d6f8eefc583748936eb60140b5a59,
+        type: 2}
+      spriteId: 1
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11402870, guid: 857d6f8eefc583748936eb60140b5a59,
+        type: 2}
+      spriteId: 19
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11402870, guid: 857d6f8eefc583748936eb60140b5a59,
+        type: 2}
+      spriteId: 0
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11402870, guid: 857d6f8eefc583748936eb60140b5a59,
+        type: 2}
+      spriteId: 15
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11402870, guid: 857d6f8eefc583748936eb60140b5a59,
+        type: 2}
+      spriteId: 7
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11402870, guid: 857d6f8eefc583748936eb60140b5a59,
+        type: 2}
+      spriteId: 18
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11402870, guid: 857d6f8eefc583748936eb60140b5a59,
+        type: 2}
+      spriteId: 11
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    fps: 40
+    loopStart: 0
+    wrapMode: 2
+  - name: Robot_b3_walk
+    frames:
+    - spriteCollection: {fileID: 11418872, guid: 6c7043a452a0854438ca2e3806b41bd2,
+        type: 2}
+      spriteId: 0
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11418872, guid: 6c7043a452a0854438ca2e3806b41bd2,
+        type: 2}
+      spriteId: 17
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11418872, guid: 6c7043a452a0854438ca2e3806b41bd2,
+        type: 2}
+      spriteId: 16
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11418872, guid: 6c7043a452a0854438ca2e3806b41bd2,
+        type: 2}
+      spriteId: 12
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11418872, guid: 6c7043a452a0854438ca2e3806b41bd2,
+        type: 2}
+      spriteId: 7
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11418872, guid: 6c7043a452a0854438ca2e3806b41bd2,
+        type: 2}
+      spriteId: 15
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11418872, guid: 6c7043a452a0854438ca2e3806b41bd2,
+        type: 2}
+      spriteId: 14
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11418872, guid: 6c7043a452a0854438ca2e3806b41bd2,
+        type: 2}
+      spriteId: 9
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11418872, guid: 6c7043a452a0854438ca2e3806b41bd2,
+        type: 2}
+      spriteId: 8
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11418872, guid: 6c7043a452a0854438ca2e3806b41bd2,
+        type: 2}
+      spriteId: 13
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11418872, guid: 6c7043a452a0854438ca2e3806b41bd2,
+        type: 2}
+      spriteId: 3
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11418872, guid: 6c7043a452a0854438ca2e3806b41bd2,
+        type: 2}
+      spriteId: 10
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11418872, guid: 6c7043a452a0854438ca2e3806b41bd2,
+        type: 2}
+      spriteId: 4
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11418872, guid: 6c7043a452a0854438ca2e3806b41bd2,
+        type: 2}
+      spriteId: 1
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11418872, guid: 6c7043a452a0854438ca2e3806b41bd2,
+        type: 2}
+      spriteId: 5
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11418872, guid: 6c7043a452a0854438ca2e3806b41bd2,
+        type: 2}
+      spriteId: 2
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11418872, guid: 6c7043a452a0854438ca2e3806b41bd2,
+        type: 2}
+      spriteId: 19
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11418872, guid: 6c7043a452a0854438ca2e3806b41bd2,
+        type: 2}
+      spriteId: 18
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11418872, guid: 6c7043a452a0854438ca2e3806b41bd2,
+        type: 2}
+      spriteId: 11
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11418872, guid: 6c7043a452a0854438ca2e3806b41bd2,
+        type: 2}
+      spriteId: 6
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    fps: 40
+    loopStart: 0
+    wrapMode: 2
+  - name: Robot_b3_Stop
+    frames:
+    - spriteCollection: {fileID: 11418872, guid: 6c7043a452a0854438ca2e3806b41bd2,
+        type: 2}
+      spriteId: 0
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    fps: 30
+    loopStart: 0
+    wrapMode: 0
+  - name: Robot_b3_walk2
+    frames:
+    - spriteCollection: {fileID: 11418872, guid: 6c7043a452a0854438ca2e3806b41bd2,
+        type: 2}
+      spriteId: 11
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11418872, guid: 6c7043a452a0854438ca2e3806b41bd2,
+        type: 2}
+      spriteId: 18
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11418872, guid: 6c7043a452a0854438ca2e3806b41bd2,
+        type: 2}
+      spriteId: 19
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11418872, guid: 6c7043a452a0854438ca2e3806b41bd2,
+        type: 2}
+      spriteId: 2
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11418872, guid: 6c7043a452a0854438ca2e3806b41bd2,
+        type: 2}
+      spriteId: 5
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11418872, guid: 6c7043a452a0854438ca2e3806b41bd2,
+        type: 2}
+      spriteId: 1
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11418872, guid: 6c7043a452a0854438ca2e3806b41bd2,
+        type: 2}
+      spriteId: 4
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11418872, guid: 6c7043a452a0854438ca2e3806b41bd2,
+        type: 2}
+      spriteId: 10
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11418872, guid: 6c7043a452a0854438ca2e3806b41bd2,
+        type: 2}
+      spriteId: 3
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11418872, guid: 6c7043a452a0854438ca2e3806b41bd2,
+        type: 2}
+      spriteId: 13
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11418872, guid: 6c7043a452a0854438ca2e3806b41bd2,
+        type: 2}
+      spriteId: 8
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11418872, guid: 6c7043a452a0854438ca2e3806b41bd2,
+        type: 2}
+      spriteId: 9
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11418872, guid: 6c7043a452a0854438ca2e3806b41bd2,
+        type: 2}
+      spriteId: 14
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11418872, guid: 6c7043a452a0854438ca2e3806b41bd2,
+        type: 2}
+      spriteId: 15
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11418872, guid: 6c7043a452a0854438ca2e3806b41bd2,
+        type: 2}
+      spriteId: 7
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11418872, guid: 6c7043a452a0854438ca2e3806b41bd2,
+        type: 2}
+      spriteId: 12
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11418872, guid: 6c7043a452a0854438ca2e3806b41bd2,
+        type: 2}
+      spriteId: 16
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11418872, guid: 6c7043a452a0854438ca2e3806b41bd2,
+        type: 2}
+      spriteId: 17
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11418872, guid: 6c7043a452a0854438ca2e3806b41bd2,
+        type: 2}
+      spriteId: 0
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    fps: 40
+    loopStart: 0
+    wrapMode: 2
+  - name: Robot_b4_Stop
+    frames:
+    - spriteCollection: {fileID: 11409136, guid: 728bdc191b7e4d14eb83e9858413f4db,
+        type: 2}
+      spriteId: 18
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    fps: 30
+    loopStart: 0
+    wrapMode: 0
+  - name: Robot_b4_walk
+    frames:
+    - spriteCollection: {fileID: 11409136, guid: 728bdc191b7e4d14eb83e9858413f4db,
+        type: 2}
+      spriteId: 18
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11409136, guid: 728bdc191b7e4d14eb83e9858413f4db,
+        type: 2}
+      spriteId: 9
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11409136, guid: 728bdc191b7e4d14eb83e9858413f4db,
+        type: 2}
+      spriteId: 15
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11409136, guid: 728bdc191b7e4d14eb83e9858413f4db,
+        type: 2}
+      spriteId: 5
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11409136, guid: 728bdc191b7e4d14eb83e9858413f4db,
+        type: 2}
+      spriteId: 0
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11409136, guid: 728bdc191b7e4d14eb83e9858413f4db,
+        type: 2}
+      spriteId: 7
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11409136, guid: 728bdc191b7e4d14eb83e9858413f4db,
+        type: 2}
+      spriteId: 13
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11409136, guid: 728bdc191b7e4d14eb83e9858413f4db,
+        type: 2}
+      spriteId: 6
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11409136, guid: 728bdc191b7e4d14eb83e9858413f4db,
+        type: 2}
+      spriteId: 16
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11409136, guid: 728bdc191b7e4d14eb83e9858413f4db,
+        type: 2}
+      spriteId: 11
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11409136, guid: 728bdc191b7e4d14eb83e9858413f4db,
+        type: 2}
+      spriteId: 10
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11409136, guid: 728bdc191b7e4d14eb83e9858413f4db,
+        type: 2}
+      spriteId: 4
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11409136, guid: 728bdc191b7e4d14eb83e9858413f4db,
+        type: 2}
+      spriteId: 19
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11409136, guid: 728bdc191b7e4d14eb83e9858413f4db,
+        type: 2}
+      spriteId: 2
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11409136, guid: 728bdc191b7e4d14eb83e9858413f4db,
+        type: 2}
+      spriteId: 17
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11409136, guid: 728bdc191b7e4d14eb83e9858413f4db,
+        type: 2}
+      spriteId: 12
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11409136, guid: 728bdc191b7e4d14eb83e9858413f4db,
+        type: 2}
+      spriteId: 8
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11409136, guid: 728bdc191b7e4d14eb83e9858413f4db,
+        type: 2}
+      spriteId: 1
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11409136, guid: 728bdc191b7e4d14eb83e9858413f4db,
+        type: 2}
+      spriteId: 14
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11409136, guid: 728bdc191b7e4d14eb83e9858413f4db,
+        type: 2}
+      spriteId: 3
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    fps: 40
+    loopStart: 0
+    wrapMode: 2
+  - name: Robot_b4_walk2
+    frames:
+    - spriteCollection: {fileID: 11409136, guid: 728bdc191b7e4d14eb83e9858413f4db,
+        type: 2}
+      spriteId: 3
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11409136, guid: 728bdc191b7e4d14eb83e9858413f4db,
+        type: 2}
+      spriteId: 14
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11409136, guid: 728bdc191b7e4d14eb83e9858413f4db,
+        type: 2}
+      spriteId: 1
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11409136, guid: 728bdc191b7e4d14eb83e9858413f4db,
+        type: 2}
+      spriteId: 8
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11409136, guid: 728bdc191b7e4d14eb83e9858413f4db,
+        type: 2}
+      spriteId: 12
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11409136, guid: 728bdc191b7e4d14eb83e9858413f4db,
+        type: 2}
+      spriteId: 17
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11409136, guid: 728bdc191b7e4d14eb83e9858413f4db,
+        type: 2}
+      spriteId: 2
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11409136, guid: 728bdc191b7e4d14eb83e9858413f4db,
+        type: 2}
+      spriteId: 19
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11409136, guid: 728bdc191b7e4d14eb83e9858413f4db,
+        type: 2}
+      spriteId: 4
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11409136, guid: 728bdc191b7e4d14eb83e9858413f4db,
+        type: 2}
+      spriteId: 10
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11409136, guid: 728bdc191b7e4d14eb83e9858413f4db,
+        type: 2}
+      spriteId: 11
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11409136, guid: 728bdc191b7e4d14eb83e9858413f4db,
+        type: 2}
+      spriteId: 16
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11409136, guid: 728bdc191b7e4d14eb83e9858413f4db,
+        type: 2}
+      spriteId: 6
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11409136, guid: 728bdc191b7e4d14eb83e9858413f4db,
+        type: 2}
+      spriteId: 13
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11409136, guid: 728bdc191b7e4d14eb83e9858413f4db,
+        type: 2}
+      spriteId: 7
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11409136, guid: 728bdc191b7e4d14eb83e9858413f4db,
+        type: 2}
+      spriteId: 0
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11409136, guid: 728bdc191b7e4d14eb83e9858413f4db,
+        type: 2}
+      spriteId: 5
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11409136, guid: 728bdc191b7e4d14eb83e9858413f4db,
+        type: 2}
+      spriteId: 15
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11409136, guid: 728bdc191b7e4d14eb83e9858413f4db,
+        type: 2}
+      spriteId: 9
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11409136, guid: 728bdc191b7e4d14eb83e9858413f4db,
+        type: 2}
+      spriteId: 18
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    fps: 40
+    loopStart: 0
+    wrapMode: 2
+  - name: Robot_b5_Stop
+    frames:
+    - spriteCollection: {fileID: 11445108, guid: a2e99f9f268eb8b4aaf020d2aa91b850,
+        type: 2}
+      spriteId: 0
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    fps: 30
+    loopStart: 0
+    wrapMode: 0
+  - name: Robot_b5_walk
+    frames:
+    - spriteCollection: {fileID: 11445108, guid: a2e99f9f268eb8b4aaf020d2aa91b850,
+        type: 2}
+      spriteId: 0
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11445108, guid: a2e99f9f268eb8b4aaf020d2aa91b850,
+        type: 2}
+      spriteId: 3
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11445108, guid: a2e99f9f268eb8b4aaf020d2aa91b850,
+        type: 2}
+      spriteId: 4
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11445108, guid: a2e99f9f268eb8b4aaf020d2aa91b850,
+        type: 2}
+      spriteId: 9
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11445108, guid: a2e99f9f268eb8b4aaf020d2aa91b850,
+        type: 2}
+      spriteId: 18
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11445108, guid: a2e99f9f268eb8b4aaf020d2aa91b850,
+        type: 2}
+      spriteId: 14
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11445108, guid: a2e99f9f268eb8b4aaf020d2aa91b850,
+        type: 2}
+      spriteId: 5
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11445108, guid: a2e99f9f268eb8b4aaf020d2aa91b850,
+        type: 2}
+      spriteId: 2
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11445108, guid: a2e99f9f268eb8b4aaf020d2aa91b850,
+        type: 2}
+      spriteId: 8
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11445108, guid: a2e99f9f268eb8b4aaf020d2aa91b850,
+        type: 2}
+      spriteId: 7
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11445108, guid: a2e99f9f268eb8b4aaf020d2aa91b850,
+        type: 2}
+      spriteId: 17
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11445108, guid: a2e99f9f268eb8b4aaf020d2aa91b850,
+        type: 2}
+      spriteId: 16
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11445108, guid: a2e99f9f268eb8b4aaf020d2aa91b850,
+        type: 2}
+      spriteId: 19
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11445108, guid: a2e99f9f268eb8b4aaf020d2aa91b850,
+        type: 2}
+      spriteId: 12
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11445108, guid: a2e99f9f268eb8b4aaf020d2aa91b850,
+        type: 2}
+      spriteId: 13
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    fps: 40
+    loopStart: 0
+    wrapMode: 0
+  - name: Robot_b5_work
+    frames:
+    - spriteCollection: {fileID: 11460140, guid: 017bc4e0b6641914da46bfbcb60145b3,
+        type: 2}
+      spriteId: 0
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11460140, guid: 017bc4e0b6641914da46bfbcb60145b3,
+        type: 2}
+      spriteId: 2
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11460140, guid: 017bc4e0b6641914da46bfbcb60145b3,
+        type: 2}
+      spriteId: 3
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11460140, guid: 017bc4e0b6641914da46bfbcb60145b3,
+        type: 2}
+      spriteId: 8
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11460140, guid: 017bc4e0b6641914da46bfbcb60145b3,
+        type: 2}
+      spriteId: 11
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11460140, guid: 017bc4e0b6641914da46bfbcb60145b3,
+        type: 2}
+      spriteId: 1
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11460140, guid: 017bc4e0b6641914da46bfbcb60145b3,
+        type: 2}
+      spriteId: 10
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11460140, guid: 017bc4e0b6641914da46bfbcb60145b3,
+        type: 2}
+      spriteId: 9
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11460140, guid: 017bc4e0b6641914da46bfbcb60145b3,
+        type: 2}
+      spriteId: 6
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11460140, guid: 017bc4e0b6641914da46bfbcb60145b3,
+        type: 2}
+      spriteId: 4
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11460140, guid: 017bc4e0b6641914da46bfbcb60145b3,
+        type: 2}
+      spriteId: 5
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11460140, guid: 017bc4e0b6641914da46bfbcb60145b3,
+        type: 2}
+      spriteId: 7
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    fps: 30
+    loopStart: 0
+    wrapMode: 0
+  - name: Robot_b4_work
+    frames:
+    - spriteCollection: {fileID: 11412562, guid: 35afc7e246df190479274a58826ff567,
+        type: 2}
+      spriteId: 18
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11412562, guid: 35afc7e246df190479274a58826ff567,
+        type: 2}
+      spriteId: 0
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11412562, guid: 35afc7e246df190479274a58826ff567,
+        type: 2}
+      spriteId: 1
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11412562, guid: 35afc7e246df190479274a58826ff567,
+        type: 2}
+      spriteId: 12
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11412562, guid: 35afc7e246df190479274a58826ff567,
+        type: 2}
+      spriteId: 6
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11412562, guid: 35afc7e246df190479274a58826ff567,
+        type: 2}
+      spriteId: 4
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11412562, guid: 35afc7e246df190479274a58826ff567,
+        type: 2}
+      spriteId: 8
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11412562, guid: 35afc7e246df190479274a58826ff567,
+        type: 2}
+      spriteId: 9
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11412562, guid: 35afc7e246df190479274a58826ff567,
+        type: 2}
+      spriteId: 2
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11412562, guid: 35afc7e246df190479274a58826ff567,
+        type: 2}
+      spriteId: 15
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11412562, guid: 35afc7e246df190479274a58826ff567,
+        type: 2}
+      spriteId: 19
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11412562, guid: 35afc7e246df190479274a58826ff567,
+        type: 2}
+      spriteId: 11
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11412562, guid: 35afc7e246df190479274a58826ff567,
+        type: 2}
+      spriteId: 14
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11412562, guid: 35afc7e246df190479274a58826ff567,
+        type: 2}
+      spriteId: 16
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11412562, guid: 35afc7e246df190479274a58826ff567,
+        type: 2}
+      spriteId: 3
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11412562, guid: 35afc7e246df190479274a58826ff567,
+        type: 2}
+      spriteId: 7
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11412562, guid: 35afc7e246df190479274a58826ff567,
+        type: 2}
+      spriteId: 13
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11412562, guid: 35afc7e246df190479274a58826ff567,
+        type: 2}
+      spriteId: 17
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11412562, guid: 35afc7e246df190479274a58826ff567,
+        type: 2}
+      spriteId: 10
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    - spriteCollection: {fileID: 11412562, guid: 35afc7e246df190479274a58826ff567,
+        type: 2}
+      spriteId: 5
+      triggerEvent: 0
+      eventInfo: 
+      eventInt: 0
+      eventFloat: 0
+    fps: 40
+    loopStart: 0
+    wrapMode: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
