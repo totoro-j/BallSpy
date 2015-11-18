@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - ground
+  - wall
+  - RobotTrigger_a
+  - Robot_a
+  - guard-1a
+  - guard-1b
+  - guard-2a
+  - guard-2b
+  - elevator
+  - workspace
+  - RobotTrigger
+  - Robot
+  - NoRobot
+  - Onlyworkspace
+  - Elevator
+  - Guard
+  - WB_Trigger
+  - GA_TriggerDes
+  - Workspace
+  - UI
+  - Mist
+  - Robot_c_Block_Left
+  - Robot_c_Block_Right
+  - MistCut
+  - guard-3
+  - Robot_c_Block
+  - elevator2
+  - GB_TriggerDes
+  - GC_TriggerDes
+  - WB_TriggerDes
+  - cavity
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Robots
+  - CUBE
+  - Player
+  - Empty
+  - Shelf
+  - BGBlock
+  - Robot
+  - BG
+  - WorkPlace
+  - UI
+  - Mist
+  - Remains
+  - start_bottom
+  - Mineral
+  - Ground
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

@@ -1,0 +1,255 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &178186
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400640}
+  - 114: {fileID: 11450154}
+  m_Layer: 0
+  m_Name: MineralIB2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400640
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 178186}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11450154
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 178186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d546f34a90531a14eaba82a43b05b86b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 3
+  materialIdsValid: 1
+  needMaterialInstance: 0
+  spriteDefinitions:
+  - name: IB2_0
+    boundsData:
+    - {x: .080000028, y: 0, z: 0}
+    - {x: 1, y: 2.63999987, z: 0}
+    untrimmedBoundsData:
+    - {x: .00499999523, y: 0, z: 0}
+    - {x: 1.64999998, y: 2.63999987, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.419999987, y: -1.31999993, z: 0}
+    - {x: .580000043, y: -1.31999993, z: 0}
+    - {x: -.419999987, y: 1.31999993, z: 0}
+    - {x: .580000043, y: 1.31999993, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00781640597, y: .00390820298}
+    - {x: .398433596, y: .00390820298}
+    - {x: .00781640597, y: .519529283}
+    - {x: .398433596, y: .519529283}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: efcc73b668add2642b5b5285b682b814, type: 2}
+    materialId: 0
+    sourceTextureGUID: fc2bddcdda306494fb4d6822e3d541e5
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    customColliders: []
+    colliderVertices:
+    - {x: .0950000286, y: 0, z: 0}
+    - {x: .175000012, y: 1.31999993, z: .100000001}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: IB2_1
+    boundsData:
+    - {x: .170000017, y: -.329999983, z: 0}
+    - {x: .840000033, y: 1.9799999, z: 0}
+    untrimmedBoundsData:
+    - {x: .00499999523, y: 0, z: 0}
+    - {x: 1.64999998, y: 2.63999987, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.25, y: -1.31999993, z: 0}
+    - {x: .590000033, y: -1.31999993, z: 0}
+    - {x: -.25, y: .659999967, z: 0}
+    - {x: .590000033, y: .659999967, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00781640597, y: .527345717}
+    - {x: .335933596, y: .527345717}
+    - {x: .00781640597, y: .914060533}
+    - {x: .335933596, y: .914060533}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: efcc73b668add2642b5b5285b682b814, type: 2}
+    materialId: 0
+    sourceTextureGUID: 52b5ea04bb588b74484b267a469549f3
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    customColliders: []
+    colliderVertices:
+    - {x: .0849999785, y: -.344999969, z: 0}
+    - {x: .154999971, y: .974999964, z: .100000001}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: IB2_2
+    boundsData:
+    - {x: .165000021, y: -.659999967, z: 0}
+    - {x: .830000043, y: 1.31999993, z: 0}
+    untrimmedBoundsData:
+    - {x: .00499999523, y: 0, z: 0}
+    - {x: 1.64999998, y: 2.63999987, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.25, y: -1.31999993, z: 0}
+    - {x: .580000043, y: -1.31999993, z: 0}
+    - {x: -.25, y: 0, z: 0}
+    - {x: .580000043, y: 0, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .351566404, y: .527345717}
+    - {x: .351566404, y: .689451158}
+    - {x: .867183566, y: .527345717}
+    - {x: .867183566, y: .689451158}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: efcc73b668add2642b5b5285b682b814, type: 2}
+    materialId: 0
+    sourceTextureGUID: 1172c00380045a8448055d0ed24880be
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    customColliders: []
+    colliderVertices:
+    - {x: .0799999535, y: -.669999957, z: 0}
+    - {x: .169999987, y: .649999976, z: .100000001}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: IB2_3
+    boundsData:
+    - {x: .0799999684, y: -.98999995, z: 0}
+    - {x: .339999974, y: .659999967, z: 0}
+    untrimmedBoundsData:
+    - {x: .00499999523, y: 0, z: 0}
+    - {x: 1.64999998, y: 2.63999987, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -.090000011, y: -1.31999993, z: 0}
+    - {x: .249999955, y: -1.31999993, z: 0}
+    - {x: -.090000011, y: -.659999967, z: 0}
+    - {x: .249999955, y: -.659999967, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00781640597, y: .921876967}
+    - {x: .00781640597, y: .988279283}
+    - {x: .265621096, y: .921876967}
+    - {x: .265621096, y: .988279283}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: efcc73b668add2642b5b5285b682b814, type: 2}
+    materialId: 0
+    sourceTextureGUID: bebdc77bbcfae99478d1062671255372
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    physicsEngine: 0
+    colliderType: 2
+    customColliders: []
+    colliderVertices:
+    - {x: .0899999738, y: -1.06499994, z: 0}
+    - {x: .169999957, y: .254999995, z: .100000001}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  premultipliedAlpha: 0
+  material: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: efcc73b668add2642b5b5285b682b814, type: 2}
+  textures:
+  - {fileID: 2800000, guid: 369c65dc362c3544ebd01ba5bba0a8e0, type: 3}
+  pngTextures: []
+  materialPngTextureId: 00000000
+  textureFilterMode: 1
+  textureMipMaps: 0
+  allowMultipleAtlases: 0
+  spriteCollectionGUID: b6d1211b2f416da4ea5344d2726f85e6
+  spriteCollectionName: MineralIB2
+  assetName: 
+  loadable: 0
+  invOrthoSize: 2
+  halfTargetHeight: 50
+  buildKey: 1706231403
+  dataGuid: 6464cc9c4ed584049ba8025d76b3259f
+  managedSpriteCollection: 0
+  hasPlatformData: 0
+  spriteCollectionPlatforms: []
+  spriteCollectionPlatformGUIDs: []
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 178186}
+  m_IsPrefabParent: 1

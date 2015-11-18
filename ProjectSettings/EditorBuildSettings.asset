@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/DemoStart.unity
+  - enabled: 1
+    path: Assets/DemoSave.unity
+  - enabled: 1
+    path: Assets/DemoSelect01.unity
+  - enabled: 1
+    path: Assets/Screen0101.unity
+  - enabled: 1
+    path: Assets/Screen0102.unity
+  - enabled: 1
+    path: Assets/Screen0103.unity
+  - enabled: 1
+    path: Assets/Screen0104.unity
+  - enabled: 1
+    path: Assets/Screen0105.unity
+  - enabled: 1
+    path: Assets/Screen0201.unity
+  - enabled: 1
+    path: Assets/DemoTech.unity
+  - enabled: 1
+    path: Assets/DemoOver.unity
+  - enabled: 1
+    path: Assets/DemoWin.unity
+  - enabled: 1
+    path: Assets/DemoLoading.unity
