@@ -8,7 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 496796}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: NGUI Snapshot Point 36
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,22 +29,23 @@ GameObject:
   - 114: {fileID: 11490204}
   - 114: {fileID: 11444188}
   - 114: {fileID: 11410064}
-  m_Layer: 8
+  - 114: {fileID: 11416908}
+  m_Layer: 5
   m_Name: Button - Music Off
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &169900
+--- !u!1 &149396
 GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 468114}
-  m_Layer: 8
+  - 4: {fileID: 473828}
+  m_Layer: 5
   m_Name: NGUI Snapshot Point 36
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65,7 +66,8 @@ GameObject:
   - 114: {fileID: 11434790}
   - 114: {fileID: 11477348}
   - 114: {fileID: 11486732}
-  m_Layer: 8
+  - 114: {fileID: 11447478}
+  m_Layer: 5
   m_Name: Button - Music
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80,7 +82,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 473340}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: Button - Music On_Off
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,10 +96,10 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 170758}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.0845336914, y: 0, z: 0}
+  m_LocalPosition: {x: -2562.84692, y: 1440, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 468114}
+  - {fileID: 473828}
   m_Father: {fileID: 473340}
   m_RootOrder: 0
 --- !u!4 &427830
@@ -107,24 +109,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 141040}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.0845336914, y: 0, z: 0}
+  m_LocalPosition: {x: -2562.84692, y: 1440, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 496796}
   m_Father: {fileID: 473340}
   m_RootOrder: 1
---- !u!4 &468114
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 169900}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 413042}
-  m_RootOrder: 0
 --- !u!4 &473340
 Transform:
   m_ObjectHideFlags: 1
@@ -138,6 +128,18 @@ Transform:
   - {fileID: 413042}
   - {fileID: 427830}
   m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!4 &473828
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 149396}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 413042}
   m_RootOrder: 0
 --- !u!4 &496796
 Transform:
@@ -273,6 +275,17 @@ MonoBehaviour:
   mAtlas: {fileID: 11448910, guid: 6424d0c64e546bd4ca3f59111f0f5ef9, type: 2}
   mSpriteName: MusicOff
   mFillCenter: 1
+--- !u!114 &11416908
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 141040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd2147e055418204b854ff1d9b3cc131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11434790
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -335,6 +348,17 @@ MonoBehaviour:
   onFinished: []
   eventReceiver: {fileID: 0}
   callWhenFinished: 
+--- !u!114 &11447478
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd2147e055418204b854ff1d9b3cc131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11467456
 MonoBehaviour:
   m_ObjectHideFlags: 1

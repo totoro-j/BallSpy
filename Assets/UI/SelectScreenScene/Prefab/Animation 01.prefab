@@ -30,6 +30,7 @@ GameObject:
   - 114: {fileID: 11400610}
   - 114: {fileID: 11472174}
   - 114: {fileID: 11415248}
+  - 114: {fileID: 11420542}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -47,7 +48,6 @@ GameObject:
   - 4: {fileID: 420592}
   - 114: {fileID: 11467494}
   - 114: {fileID: 11420506}
-  - 114: {fileID: 11426652}
   - 114: {fileID: 11429108}
   - 114: {fileID: 11468852}
   m_Layer: 5
@@ -238,12 +238,12 @@ MonoBehaviour:
   from: {x: 1, y: 1, z: 1}
   to: {x: 0, y: 1.5, z: 1}
   updateTable: 0
---- !u!114 &11426652
+--- !u!114 &11420542
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 171372}
+  m_GameObject: {fileID: 169036}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 95a6d477e5171c647b37b7d189e1da81, type: 3}

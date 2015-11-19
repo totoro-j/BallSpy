@@ -308,18 +308,18 @@ public class RobotTrigger : MonoBehaviour {
 			//回调函数GameOverScene
 			Gamewin.OnComplete (GameWinScene);
 			HOTween.To (GameObject.Find ("over").gameObject.GetComponent<tk2dSprite> (), 2, Gamewin);
-		} else if(IsWin.tag == "Robot_c_Block_Right") {
+		} else if(IsWin.CompareTag("Robot_c_Block_Right")) {
 			//c型号被阻隔
 			isBlock_Right = true;
           
-		} else if(IsWin.tag == "Robot_c_Block_Left") {
+		} else if(IsWin.CompareTag( "Robot_c_Block_Left")) {
 			//c型号被阻隔
 			isBlock_Left = true;
             
            
 		}
         //2号机器人转向
-		if (IsWin.tag == "Robot_c_Block_Left" || IsWin.tag == "Robot_c_Block_Right" )
+		if (IsWin.CompareTag("Robot_c_Block_Left") || IsWin.CompareTag("Robot_c_Block_Right" ))
         {
              if (_Turn)
             {
@@ -334,7 +334,7 @@ public class RobotTrigger : MonoBehaviour {
 
 	void OnTriggerStay(Collider IsElevator){
 		//如果触发器为电梯
-        if (IsElevator.tag == "elevator" || IsElevator.tag == "elevator2")
+		if (IsElevator.CompareTag("elevator") || IsElevator.CompareTag("elevator2"))
         {
 			//触发中，电梯判断为true；
 			IsElevatored = true;
@@ -346,14 +346,14 @@ public class RobotTrigger : MonoBehaviour {
 	
 	void OnTriggerExit(Collider IsElevator){
 		//如果触发器为电梯
-        if (IsElevator.tag == "elevator" || IsElevator.tag == "elevator2")
+		if (IsElevator.CompareTag("elevator") || IsElevator.CompareTag("elevator2"))
         {
 			//离开触发，电梯判断为false；
 			IsElevatored = false;
-		}else if(IsElevator.tag == "Robot_c_Block_Right") {
+		}else if(IsElevator.CompareTag("Robot_c_Block_Right")) {
 			//c型号阻隔取消
 			isBlock_Right = false;
-		}else if(IsElevator.tag == "Robot_c_Block_Left") {
+		}else if(IsElevator.CompareTag("Robot_c_Block_Left")) {
 			//c型号阻隔取消
 			isBlock_Left = false;
 		}

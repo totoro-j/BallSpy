@@ -49,7 +49,6 @@ public class PlayerGameOver : MonoBehaviour {
 					*-Mathf.Sign(
 					Vector3.Cross(
 					new Vector3(100f,0f,0f),transform.position*100.0f-LightComponent[1].transform.position*100.0f)[2]);
-				print(ShootAngle01);
 				LightComponent[1].transform.rotation = Quaternion.Euler(ShootAngle01,90,0);
 				LightComponent[1].GetComponent<ParticleSystem>().Play();
 				if(Application.loadedLevelName != "DemoTech"){
@@ -106,9 +105,6 @@ public class PlayerGameOver : MonoBehaviour {
                     * -Mathf.Sign(
                     Vector3.Cross(
                     new Vector3(100f, 0f, 0f), transform.position * 100.0f - LightComponent[1].transform.position * 100.0f)[2]);
-				print(ShootAngle01);
-				print(LightComponent[1].transform.position[0] + "and" +LightComponent[1].transform.position[1]);
-				print(LightComponent[1].transform.parent.name);
                 LightComponent[1].transform.rotation = Quaternion.Euler(ShootAngle01, 90, 0);
                 LightComponent[1].GetComponent<ParticleSystem>().Play();
                 if (Application.loadedLevelName != "DemoTech")

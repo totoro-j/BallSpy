@@ -88,7 +88,7 @@ public class PlayerTrigger : MonoBehaviour {
 			HOTween.To (GameObject.Find ("over").gameObject.GetComponent<tk2dSprite> (), 0.5f, GameWin);
 		}
 		//用于检测小球触发到机器人时，将num检测值重置
-		if (other.tag == "RobotTrigger" && other.GetComponent<RobotGameOver> ().isAvail == true) {
+		if (other.CompareTag("RobotTrigger") && other.GetComponent<RobotGameOver> ().isAvail == true) {
 			num = 0;
 		}
 	}
@@ -99,7 +99,7 @@ public class PlayerTrigger : MonoBehaviour {
 	
 	void OnCollisionStay(Collision Ground){
 		//检测与地面的碰撞
-		if (Ground.gameObject.tag == "ground") {
+		if (Ground.gameObject.CompareTag("ground")) {
 			//为了防止小球在天花板上滚动，检测碰撞法线是否向上
 			if(Ground.contacts[0].normal[1] > 0){
 				GameController.GetInstance().OnGround = true;
@@ -109,7 +109,7 @@ public class PlayerTrigger : MonoBehaviour {
 	
 	void OnCollisionExit(Collision Ground){
 		//检测小球是否离开地面（主要是小球跳起来了）
-		if (Ground.gameObject.tag == "ground") {
+		if (Ground.gameObject.CompareTag("ground")) {
 			GameController.GetInstance().JumpJudge = true;
 			GameController.GetInstance().OnGround = false;
 		}
@@ -117,7 +117,7 @@ public class PlayerTrigger : MonoBehaviour {
 	
 	void OnTriggerStay(Collider NextPlayer){
 		//如果触发器为机器人且机器人有效(漏洞是在机器人身边等他失效的话没有判断值可以判断此变化，所以在PlayerChange里继续对机器人有效性进行检测)
-		if(NextPlayer.tag == "RobotTrigger" && NextPlayer.GetComponent<RobotGameOver>().isAvail == true) {
+		if(NextPlayer.CompareTag("RobotTrigger") && NextPlayer.GetComponent<RobotGameOver>().isAvail == true) {
 			num++;
 			//只选择num为1时的机器人作为触发机器人
 			if(num == 1){
@@ -132,7 +132,7 @@ public class PlayerTrigger : MonoBehaviour {
 			}
 		}
 		
-		if(NextPlayer.tag == "elevator") {
+		if(NextPlayer.CompareTag("elevator")) {
 			//触发中，电梯判断为true；
 			GameController.GetInstance().IsElevatored = true;
 		}
@@ -140,7 +140,7 @@ public class PlayerTrigger : MonoBehaviour {
 	
 	void OnTriggerExit(Collider NextPlayer){
 		//如果触发器为机器人
-		if (NextPlayer.tag == "RobotTrigger") {
+		if (NextPlayer.CompareTag("RobotTrigger")) {
 			//将num值重置
 			num = 0;
 			//如果机器人有效
@@ -154,7 +154,7 @@ public class PlayerTrigger : MonoBehaviour {
 			}		
 		}
 		
-		if(NextPlayer.tag == "elevator") {
+		if(NextPlayer.CompareTag("elevator")) {
 			//触发中，电梯判断为true；
 			GameController.GetInstance().IsElevatored = false;
 		}

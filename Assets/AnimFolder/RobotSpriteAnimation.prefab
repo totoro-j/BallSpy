@@ -4764,7 +4764,7 @@ MonoBehaviour:
       eventFloat: 0
     fps: 40
     loopStart: 0
-    wrapMode: 0
+    wrapMode: 2
   - name: Robot_b5_work
     frames:
     - spriteCollection: {fileID: 11460140, guid: 017bc4e0b6641914da46bfbcb60145b3,
@@ -5391,7 +5391,7 @@ MonoBehaviour:
       eventFloat: 0
     fps: 40
     loopStart: 0
-    wrapMode: 0
+    wrapMode: 2
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

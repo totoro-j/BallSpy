@@ -64,7 +64,7 @@ public class GesturesController : MonoBehaviour {
 		Ray ray1 = UICamera.GetComponent<Camera> ().ScreenPointToRay (e.Position);
 		RaycastHit hit1;
 		if(Physics.Raycast(ray1, out hit1)){
-			if(hit1.transform.gameObject.tag == "UI"){
+			if(hit1.transform.gameObject.CompareTag("UI")){
 			}else{
 				if (e.Position.x > 0 && e.Position.y < -e.Position.x + Screen.height && e.Position.y > e.Position.x) {
 					//左屏幕

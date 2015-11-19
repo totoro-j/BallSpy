@@ -450,7 +450,7 @@ public class SceneTechAnimControl : MonoBehaviour {
 		GameController.GetInstance ().CurrentPlayerTrigger = Robot04Trigger;
 		MyName = GameController.GetInstance ().CurrentPlayerTrigger.transform.parent.name.Substring (start - 1, length);
 		for(WorkCounts = 0; WorkCounts < GameController.GetInstance().WorkSpaceCollection.Count; WorkCounts++){
-			if(MyName == GameController.GetInstance().WorkSpaceCollection[WorkCounts].gameObject.name.Substring (start - 1, length) && GameController.GetInstance().WorkSpaceCollection[WorkCounts].tag == "workspace"){
+			if(MyName == GameController.GetInstance().WorkSpaceCollection[WorkCounts].gameObject.name.Substring (start - 1, length) && GameController.GetInstance().WorkSpaceCollection[WorkCounts].CompareTag( "workspace")){
 				GameController.GetInstance().WorkSpaceCollection[WorkCounts].GetComponent<AimCreater>().WorkSpaceComponent [0].SetActive (true);
 				GameController.GetInstance().WorkSpaceCollectionEx.Add(GameController.GetInstance().WorkSpaceCollection[WorkCounts]);
 			}
@@ -579,7 +579,7 @@ public class SceneTechAnimControl : MonoBehaviour {
 			GameController.GetInstance ().BallToRobot = true;
 			MyName = GameController.GetInstance ().CurrentPlayer.name.Substring (start - 1, length);
 			for (WorkCounts = 0; WorkCounts < GameController.GetInstance().WorkSpaceCollection.Count; WorkCounts++) {
-				if (MyName == GameController.GetInstance ().WorkSpaceCollection [WorkCounts].gameObject.name.Substring (start - 1, length) && GameController.GetInstance ().WorkSpaceCollection [WorkCounts].tag == "workspace") {
+				if (MyName == GameController.GetInstance ().WorkSpaceCollection [WorkCounts].gameObject.name.Substring (start - 1, length) && GameController.GetInstance ().WorkSpaceCollection [WorkCounts].CompareTag("workspace")) {
 					GameController.GetInstance ().WorkSpaceCollection [WorkCounts].GetComponent<AimCreater> ().WorkSpaceComponent [0].SetActive (true);
 					GameController.GetInstance ().WorkSpaceCollectionEx.Add (GameController.GetInstance ().WorkSpaceCollection [WorkCounts]);
 				}
@@ -641,7 +641,7 @@ public class SceneTechAnimControl : MonoBehaviour {
 		GameController.GetInstance ().CurrentPlayerTrigger = Robot03Trigger;
 		MyName = GameController.GetInstance ().CurrentPlayer.name.Substring (start - 1, length);
 		for(WorkCounts = 0; WorkCounts < GameController.GetInstance().WorkSpaceCollection.Count; WorkCounts++){
-			if(MyName == GameController.GetInstance().WorkSpaceCollection[WorkCounts].gameObject.name.Substring (start - 1, length) && GameController.GetInstance().WorkSpaceCollection[WorkCounts].tag == "workspace"){
+			if(MyName == GameController.GetInstance().WorkSpaceCollection[WorkCounts].gameObject.name.Substring (start - 1, length) && GameController.GetInstance().WorkSpaceCollection[WorkCounts].CompareTag("workspace")){
 				GameController.GetInstance().WorkSpaceCollection[WorkCounts].GetComponent<AimCreater>().WorkSpaceComponent [0].SetActive (true);
 				GameController.GetInstance().WorkSpaceCollectionEx.Add(GameController.GetInstance().WorkSpaceCollection[WorkCounts]);
 			}

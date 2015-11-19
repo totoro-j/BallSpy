@@ -43,7 +43,7 @@ MonoBehaviour:
   mSprites:
   - name: Button
     x: 0
-    y: 850
+    y: 558
     width: 410
     height: 117
     borderLeft: 0
@@ -54,9 +54,35 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
+  - name: Button-Exitjpg
+    x: 0
+    y: 676
+    width: 410
+    height: 117
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Button-Start
+    x: 0
+    y: 794
+    width: 539
+    height: 173
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: MusicOff
     x: 1921
-    y: 1636
+    y: 1720
     width: 99
     height: 83
     borderLeft: 0
@@ -69,7 +95,7 @@ MonoBehaviour:
     paddingBottom: 7
   - name: MusicOn
     x: 1921
-    y: 1720
+    y: 1636
     width: 99
     height: 83
     borderLeft: 0

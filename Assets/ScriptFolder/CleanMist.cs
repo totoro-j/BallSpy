@@ -26,7 +26,7 @@ public class CleanMist : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (gameObject == GameController.GetInstance().CurrentPlayerTrigger && other.tag == "Mist")
+        if (gameObject == GameController.GetInstance().CurrentPlayerTrigger && other.CompareTag("Mist"))
         {
             List<GameObject> MistList = new List<GameObject>();
             List<GameObject> MistOtherList = new List<GameObject>();
@@ -76,8 +76,7 @@ public class CleanMist : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        if (gameObject == GameController.GetInstance().CurrentPlayerTrigger && other.tag == "MistCut")
-        {
+        if (gameObject.CompareTag("Player") && gameObject == GameController.GetInstance().CurrentPlayerTrigger && other.CompareTag("MistCut")){
             int Count;
             for (Count = 0; Count < MistAll.Count; Count++)
             {

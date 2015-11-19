@@ -3,10 +3,13 @@ using System.Collections;
 
 public class GuardTrigger : MonoBehaviour {
     public char Guard;
-	private GameObject GuardDestroy;
+	private GameObject GuardDestroy;//警卫移动结束位置
+	public GameObject GuardInstiate;//警卫移动初始位置
+	private Transform _GuardBody;
 
 	// Use this for initialization
 	void Start () {
+		_GuardBody=transform.parent.transform.parent.gameObject.transform;
 		GuardDestroy = gameObject.transform.parent.transform.parent.gameObject;
 	}
 	
@@ -17,22 +20,21 @@ public class GuardTrigger : MonoBehaviour {
 
 	void OnTriggerStay(Collider AnimTrigger){
         if(Guard=='a'){
-		    if (AnimTrigger.gameObject.tag== "GA_TriggerDes") {
-			    //销毁第二关中生成的警卫
-			    Destroy (GuardDestroy);
+		    if (AnimTrigger.gameObject.CompareTag("GA_TriggerDes")) {
+				//将小球的位置移到初始位置
+				_GuardBody.position = new Vector3(GuardInstiate.transform.position.x, GuardInstiate.transform.position.y, GuardInstiate.transform.position.z);
             }
 		}else if(Guard=='b'){
-            if (AnimTrigger.gameObject.tag == "GB_TriggerDes")
+            if (AnimTrigger.gameObject.CompareTag("GB_TriggerDes"))
             {
-                //销毁第二关中生成的警卫
-                Destroy(GuardDestroy);
-            }
+				//将小球的位置移到初始位置
+				_GuardBody.position = new Vector3(GuardInstiate.transform.position.x, GuardInstiate.transform.position.y, GuardInstiate.transform.position.z);            }
         
         }else if(Guard=='c'){
-                if (AnimTrigger.gameObject.tag== "GC_TriggerDes") {
-			    //销毁第二关中生成的警卫
-			    Destroy (GuardDestroy);
-                }
+                if (AnimTrigger.gameObject.CompareTag("GC_TriggerDes"))
+			{
+				//将小球的位置移到初始位置
+				_GuardBody.position = new Vector3(GuardInstiate.transform.position.x, GuardInstiate.transform.position.y, GuardInstiate.transform.position.z);            }
         
         }
        }

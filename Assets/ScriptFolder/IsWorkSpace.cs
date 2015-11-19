@@ -21,7 +21,7 @@ public class IsWorkSpace : MonoBehaviour {
 
 	void OnTriggerStay(Collider IsWorkSpace){
 		//如果在工作台附近
-		if (IsWorkSpace.tag == "workspace") {
+		if (IsWorkSpace.CompareTag("workspace")) {
 			if(gameObject.GetComponent<RobotGameOver>().isAvail == true){
 				//获取工作台名称前缀
 				CurrentWorkSpace = IsWorkSpace.name.Substring (start - 1, length);
@@ -45,47 +45,51 @@ public class IsWorkSpace : MonoBehaviour {
 		}
 
 		//用于解决多个机器人在一个工作台时隔离其他机器人
-		if(IsWorkSpace.tag == "workspace" || IsWorkSpace.tag == "Onlyworkspace" ){
-			if(gameObject.GetComponent<RobotGameOver>().isAvail == false){
-				isworkspace = false;
-				if(IsWorkSpace.gameObject.GetComponent<AimCreater>() != null){
-					IsWorkSpace.gameObject.GetComponent<AimCreater>().WorkSpaceComponent [0].SetActive (true);
-				}else if(IsWorkSpace.gameObject.transform.parent.gameObject.GetComponent<AimCreater>() != null){
-					IsWorkSpace.gameObject.transform.parent.gameObject.GetComponent<AimCreater>().WorkSpaceComponent [0].SetActive (true);
-				}
-				IsWorkSpace.tag = "workspace";
-			}
-			if(IsWorkSpace.GetComponent<MineralAnimation>() != null){
-				if(IsWorkSpace.GetComponent<MineralAnimation>().DestroyAlert == true){
+		if(IsWorkSpace.CompareTag("workspace") || IsWorkSpace.CompareTag("Onlyworkspace")){
+			//获取工作台名称前缀
+			CurrentWorkSpace = IsWorkSpace.name.Substring (start - 1, length);
+			if(CurrentRobotName == CurrentWorkSpace){
+				if(gameObject.GetComponent<RobotGameOver>().isAvail == false){
 					isworkspace = false;
-					GetComponent<RobotGameOver> ().isWork = false;
-					transform.parent.gameObject.GetComponent<tk2dSpriteAnimator> ().Stop ();
-					GameController.GetInstance().intoWork = false;
-					GameController.GetInstance().outWork = false;
-					CurrentWorkSpace = null;
-					GetComponent<WorkSpaceController> ().isWorkSpacePlay = false;
-					GetComponent<RobotTrigger>().isMove = 1;
+					if(IsWorkSpace.gameObject.GetComponent<AimCreater>() != null){
+						IsWorkSpace.gameObject.GetComponent<AimCreater>().WorkSpaceComponent [0].SetActive (true);
+					}else if(IsWorkSpace.gameObject.transform.parent.gameObject.GetComponent<AimCreater>() != null){
+						IsWorkSpace.gameObject.transform.parent.gameObject.GetComponent<AimCreater>().WorkSpaceComponent [0].SetActive (true);
+					}
+					IsWorkSpace.tag = "workspace";
 				}
-			}else if(IsWorkSpace.transform.parent.gameObject.GetComponent<MineralAnimation>() != null){
-				if(IsWorkSpace.transform.parent.gameObject.GetComponent<MineralAnimation>().DestroyAlert == true){
-					isworkspace = false;
-					GetComponent<RobotGameOver> ().isWork = false;
-					transform.parent.gameObject.GetComponent<tk2dSpriteAnimator> ().Stop ();
-					GameController.GetInstance().intoWork = false;
-					GameController.GetInstance().outWork = false;
-					GetComponent<WorkSpaceController> ().isWorkSpacePlay = false;
-					CurrentWorkSpace = null;
-					GetComponent<RobotTrigger>().isMove = 1;
+				if(IsWorkSpace.GetComponent<MineralAnimation>() != null){
+					if(IsWorkSpace.GetComponent<MineralAnimation>().DestroyAlert == true){
+						isworkspace = false;
+						GetComponent<RobotGameOver> ().isWork = false;
+						transform.parent.gameObject.GetComponent<tk2dSpriteAnimator> ().Stop ();
+						GameController.GetInstance().intoWork = false;
+						GameController.GetInstance().outWork = false;
+						CurrentWorkSpace = null;
+						GetComponent<WorkSpaceController> ().isWorkSpacePlay = false;
+						GetComponent<RobotTrigger>().isMove = 1;
+					}
+				}else if(IsWorkSpace.transform.parent.gameObject.GetComponent<MineralAnimation>() != null){
+					if(IsWorkSpace.transform.parent.gameObject.GetComponent<MineralAnimation>().DestroyAlert == true){
+						isworkspace = false;
+						GetComponent<RobotGameOver> ().isWork = false;
+						transform.parent.gameObject.GetComponent<tk2dSpriteAnimator> ().Stop ();
+						GameController.GetInstance().intoWork = false;
+						GameController.GetInstance().outWork = false;
+						GetComponent<WorkSpaceController> ().isWorkSpacePlay = false;
+						CurrentWorkSpace = null;
+						GetComponent<RobotTrigger>().isMove = 1;
+					}
 				}
 			}
 		}
 	}
 
 	void OnTriggerExit(Collider IsWorkSpace){
-		if (IsWorkSpace.tag == "workspace") {
+		if (IsWorkSpace.CompareTag("workspace")) {
 			//离开工作台区域即false
 			isworkspace = false;
-		}else if(IsWorkSpace.tag == "Onlyworkspace"){
+		}else if(IsWorkSpace.CompareTag("Onlyworkspace")){
 			if(IsWorkSpace.gameObject.GetComponent<AimCreater>() != null){
 				IsWorkSpace.gameObject.GetComponent<AimCreater>().WorkSpaceComponent [0].SetActive (true);
 			}else if(IsWorkSpace.gameObject.transform.parent.gameObject.GetComponent<AimCreater>() != null){

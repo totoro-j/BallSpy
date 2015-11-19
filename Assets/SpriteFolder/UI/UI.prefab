@@ -42,8 +42,8 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 36538a38ba8116842a98c4fcbed997ef, type: 2}
   mSprites:
   - name: closeeyes
-    x: 635
-    y: 684
+    x: 315
+    y: 7
     width: 74
     height: 17
     borderLeft: 0
@@ -55,7 +55,7 @@ MonoBehaviour:
     paddingTop: 21
     paddingBottom: 2
   - name: frame_bg
-    x: 0
+    x: 1338
     y: 394
     width: 472
     height: 273
@@ -69,7 +69,7 @@ MonoBehaviour:
     paddingBottom: 42
   - name: frame_no
     x: 0
-    y: 86
+    y: 12
     width: 139
     height: 53
     borderLeft: 0
@@ -81,8 +81,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: frame_no_press
-    x: 0
-    y: 32
+    x: 175
+    y: 64
     width: 139
     height: 53
     borderLeft: 0
@@ -94,8 +94,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: frame_yes
-    x: 147
-    y: 86
+    x: 175
+    y: 10
     width: 139
     height: 53
     borderLeft: 0
@@ -107,8 +107,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: frame_yes_press
-    x: 147
-    y: 32
+    x: 315
+    y: 64
     width: 139
     height: 53
     borderLeft: 0
@@ -120,8 +120,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: jt
-    x: 982
-    y: 976
+    x: 140
+    y: 17
     width: 29
     height: 48
     borderLeft: 0
@@ -133,8 +133,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: openeyes
-    x: 931
-    y: 784
+    x: 315
+    y: 25
     width: 81
     height: 38
     borderLeft: 0
@@ -146,8 +146,8 @@ MonoBehaviour:
     paddingTop: 3
     paddingBottom: 3
   - name: over
-    x: 1012
-    y: 1021
+    x: 0
+    y: 8
     width: 3
     height: 3
     borderLeft: 0
@@ -159,10 +159,23 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: PauseBG
-    x: 635
-    y: 823
-    width: 346
-    height: 201
+    x: 0
+    y: 249
+    width: 1337
+    height: 775
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: PauseButton
+    x: 527
+    y: 88
+    width: 421
+    height: 160
     borderLeft: 0
     borderRight: 0
     borderTop: 0
@@ -172,8 +185,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: save_0
-    x: 0
-    y: 140
+    x: 1811
+    y: 414
     width: 146
     height: 253
     borderLeft: 0
@@ -185,7 +198,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: save_1
-    x: 147
+    x: 1338
     y: 140
     width: 146
     height: 253
@@ -198,7 +211,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: save_2
-    x: 294
+    x: 1485
     y: 140
     width: 146
     height: 253
@@ -211,8 +224,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: save_3
-    x: 473
-    y: 414
+    x: 1632
+    y: 140
     width: 146
     height: 253
     borderLeft: 0
@@ -224,7 +237,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: save_bg
-    x: 0
+    x: 1338
     y: 668
     width: 634
     height: 356
@@ -237,8 +250,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: save_delete
-    x: 982
-    y: 942
+    x: 397
+    y: 30
     width: 33
     height: 33
     borderLeft: 0
@@ -250,10 +263,10 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 1
   - name: save_return
-    x: 756
-    y: 771
-    width: 174
-    height: 51
+    x: 0
+    y: 118
+    width: 526
+    height: 130
     borderLeft: 0
     borderRight: 0
     borderTop: 0
@@ -263,8 +276,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: save_return_press
-    x: 756
-    y: 719
+    x: 0
+    y: 66
     width: 174
     height: 51
     borderLeft: 0
@@ -276,8 +289,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: save_star
-    x: 982
-    y: 922
+    x: 431
+    y: 44
     width: 20
     height: 19
     borderLeft: 0
@@ -288,9 +301,22 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
+  - name: Time
+    x: 455
+    y: 43
+    width: 64
+    height: 74
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: yh(1)
-    x: 635
-    y: 702
+    x: 949
+    y: 128
     width: 120
     height: 120
     borderLeft: 0
