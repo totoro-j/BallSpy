@@ -43,19 +43,6 @@ MonoBehaviour:
   mSprites:
   - name: BackGround01
     x: 0
-    y: 1935
-    width: 1920
-    height: 1080
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: BackGround02
-    x: 0
     y: 3016
     width: 1920
     height: 1080
@@ -67,7 +54,7 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
-  - name: BackGround03
+  - name: BackGround02
     x: 1921
     y: 3016
     width: 1920
@@ -80,9 +67,35 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
+  - name: BackGround03
+    x: 0
+    y: 1935
+    width: 1920
+    height: 1080
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: box
+    x: 4033
+    y: 4064
+    width: 32
+    height: 32
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: ButtonSelect
     x: 3842
-    y: 3625
+    y: 3430
     width: 150
     height: 150
     borderLeft: 0
@@ -108,7 +121,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: Home
     x: 3842
-    y: 3536
+    y: 3341
     width: 103
     height: 88
     borderLeft: 0
@@ -121,7 +134,7 @@ MonoBehaviour:
     paddingBottom: 4
   - name: Illustrated
     x: 3993
-    y: 3667
+    y: 3472
     width: 80
     height: 108
     borderLeft: 0
@@ -134,7 +147,7 @@ MonoBehaviour:
     paddingBottom: 9
   - name: Panel01
     x: 0
-    y: 547
+    y: 1241
     width: 1108
     height: 693
     borderLeft: 0
@@ -160,7 +173,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: Panel03
     x: 0
-    y: 1241
+    y: 547
     width: 1108
     height: 693
     borderLeft: 0
@@ -185,18 +198,18 @@ MonoBehaviour:
     paddingTop: 5
     paddingBottom: 5
   - name: Star
-    x: 3946
-    y: 3544
-    width: 88
-    height: 80
+    x: 3842
+    y: 3581
+    width: 194
+    height: 194
     borderLeft: 0
     borderRight: 0
     borderTop: 0
     borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 1
-    paddingTop: 5
-    paddingBottom: 3
+    paddingLeft: 30
+    paddingRight: 32
+    paddingTop: 33
+    paddingBottom: 29
   mPixelSize: 1
   mReplacement: {fileID: 0}
   mCoordinates: 0

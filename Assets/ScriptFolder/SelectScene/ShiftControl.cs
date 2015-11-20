@@ -11,6 +11,9 @@ namespace Assets.ScriptFolder.SelectScene
         //当前进度
         public int ShiftMaxId;
 
+        // 解锁动画
+        public EventDelegate[] UnclockAnimation;
+
         public List<GameObject> SelectBackGroundList;
 
         // Use this for initialization
@@ -60,6 +63,15 @@ namespace Assets.ScriptFolder.SelectScene
 
             //播放当前切换出现动画
             SelectBackGroundList[ShiftId].GetComponent<BackGroundShift>().Appear(-100);
+        }
+
+        //播放解锁动画
+        public void PlayUnclockAnimation()
+        {
+            foreach (EventDelegate anim in UnclockAnimation)
+            {
+                anim.Execute();
+            }
         }
     }
 }

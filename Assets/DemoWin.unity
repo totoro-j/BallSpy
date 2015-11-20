@@ -343,15 +343,15 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: .059688583, g: .125660196, b: .338235319, a: 1}
+  mColor: {r: .0588235296, g: .125490203, b: .145098045, a: 1}
   mPivot: 4
-  mWidth: 149
-  mHeight: 138
+  mWidth: 200
+  mHeight: 200
   mDepth: 6
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
-  keepAspectRatio: 1
-  aspectRatio: 1.08333337
+  keepAspectRatio: 0
+  aspectRatio: 1
   mType: 0
   mFillDirection: 4
   mFillAmount: 1
@@ -1350,13 +1350,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 182
-  mHeight: 168
+  mWidth: 200
+  mHeight: 200
   mDepth: 8
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 1.08333337
+  aspectRatio: 1
   mType: 0
   mFillDirection: 4
   mFillAmount: 1
@@ -1633,8 +1633,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 926a95042efbe974a8eef5ebb86936da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StarNumber: 3
-  StarSum: 3
+  StarNumber: 5
+  StarSum: 7
   AnimInterval: .200000003
   StarEnable: 1
 --- !u!1 &1912334765

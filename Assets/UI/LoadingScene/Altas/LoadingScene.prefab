@@ -1,51 +1,51 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &130892
+--- !u!1 &181384
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 404012}
-  - 114: {fileID: 11436230}
+  - 4: {fileID: 492008}
+  - 114: {fileID: 11403424}
   m_Layer: 0
-  m_Name: SettlementAtlas
+  m_Name: LoadingScene
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &404012
+--- !u!4 &492008
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 130892}
+  m_GameObject: {fileID: 181384}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &11436230
+--- !u!114 &11403424
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 130892}
+  m_GameObject: {fileID: 181384}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4d0c51bb0b6e93049af5e88f93826e3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  material: {fileID: 2100000, guid: dd2512aaf02780f4da86e7b197587bd8, type: 2}
+  material: {fileID: 2100000, guid: 89d10f33c29c5c74392799a8154ad69e, type: 2}
   mSprites:
-  - name: Button
-    x: 1426
-    y: 1654
-    width: 420
-    height: 133
+  - name: 1
+    x: 0
+    y: 1442
+    width: 1713
+    height: 606
     borderLeft: 0
     borderRight: 0
     borderTop: 0
@@ -54,24 +54,11 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
-  - name: Death
-    x: 1426
-    y: 1788
-    width: 260
-    height: 260
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 2
-    paddingTop: 0
-    paddingBottom: 0
-  - name: LosePanel
-    x: 0
-    y: 396
-    width: 1425
-    height: 825
+  - name: 2
+    x: 943
+    y: 807
+    width: 942
+    height: 634
     borderLeft: 0
     borderRight: 0
     borderTop: 0
@@ -80,24 +67,37 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
-  - name: Star
-    x: 1687
-    y: 1854
-    width: 194
-    height: 194
+  - name: 3
+    x: 0
+    y: 172
+    width: 942
+    height: 634
     borderLeft: 0
     borderRight: 0
     borderTop: 0
     borderBottom: 0
-    paddingLeft: 30
-    paddingRight: 32
-    paddingTop: 33
-    paddingBottom: 29
-  - name: WinPanel
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: 4
     x: 0
-    y: 1222
-    width: 1425
-    height: 826
+    y: 807
+    width: 942
+    height: 634
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Ball
+    x: 1714
+    y: 1881
+    width: 167
+    height: 167
     borderLeft: 0
     borderRight: 0
     borderTop: 0
@@ -119,5 +119,5 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 130892}
+  m_RootGameObject: {fileID: 181384}
   m_IsPrefabParent: 1
